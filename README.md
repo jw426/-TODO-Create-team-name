@@ -1,5 +1,5 @@
-# ITProject / TODO: Create team name 
-## We are creating Emotional Granularity App, Emotional Pizzeria 
+# ITProject [TODO: Create team name]
+## We are creating an app to help increase emotional granularity of autistic children! [Emotional Pizzeria] 
 
 ## Contributors 
 Jiwon Bae 1229059
@@ -16,3 +16,5 @@ bandersson@student.unimelb.edu.au
 
 Rimon Ismail 1269285
 rcismail@student.unimelb.edu.au
+
+
