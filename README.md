@@ -1,5 +1,5 @@
 # ITProject / TODO: Create team name 
-# Creating Emotional Granularity App, Emotional Pizzeria 
+## We are creating Emotional Granularity App, Emotional Pizzeria 
 
 ## Contributors 
 Jiwon Bae 1229059
