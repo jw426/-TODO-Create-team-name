@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 104798573}
   m_Layer: 0
   m_Name: Click SFX
-  m_TagString: Untagged
+  m_TagString: sfx
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -170,7 +170,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 245965889d0a183438ef3478b27122c0, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -700,9 +700,10 @@ GameObject:
   - component: {fileID: 603653262}
   - component: {fileID: 603653264}
   - component: {fileID: 603653263}
+  - component: {fileID: 603653265}
   m_Layer: 0
   m_Name: SFX Volume
-  m_TagString: Untagged
+  m_TagString: SFXHandler
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -714,7 +715,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 603653260}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -877,6 +878,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 603653260}
   m_CullTransparentMesh: 1
+--- !u!114 &603653265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603653260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ccedb8fa26eb824b8a776dec76aacca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &739120885
 GameObject:
   m_ObjectHideFlags: 0
@@ -1415,7 +1428,7 @@ GameObject:
   - component: {fileID: 1604380287}
   - component: {fileID: 1604380286}
   m_Layer: 0
-  m_Name: SFX Volume (2)
+  m_Name: Speech Text Speed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1721,11 +1734,11 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 603653261}
   - {fileID: 1876896508}
   - {fileID: 1604380285}
   - {fileID: 1899218735}
   - {fileID: 136617090}
+  - {fileID: 603653261}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2056,7 +2069,7 @@ GameObject:
   - component: {fileID: 1876896510}
   - component: {fileID: 1876896509}
   m_Layer: 0
-  m_Name: SFX Volume (1)
+  m_Name: Background Music Volume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
