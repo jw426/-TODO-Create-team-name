@@ -1089,6 +1089,60 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 588247070}
   m_CullTransparentMesh: 1
+--- !u!1 &629328016
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 629328018}
+  - component: {fileID: 629328017}
+  m_Layer: 0
+  m_Name: QuizManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &629328017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629328016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4f98b3f506524145a385779077385e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  QnA:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  options:
+  - {fileID: 1935165854}
+  - {fileID: 686706135}
+  - {fileID: 2030841097}
+  currentQuestion: 0
+  QuestionTxt: {fileID: 1634083738}
+--- !u!4 &629328018
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629328016}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 666.4158, y: 555.86414, z: -237.27629}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &686706135
 GameObject:
   m_ObjectHideFlags: 0
@@ -1101,6 +1155,7 @@ GameObject:
   - component: {fileID: 686706139}
   - component: {fileID: 686706138}
   - component: {fileID: 686706137}
+  - component: {fileID: 686706140}
   m_Layer: 0
   m_Name: Emotion2 Button
   m_TagString: Untagged
@@ -1125,8 +1180,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000012398, y: 112}
-  m_SizeDelta: {x: 131.0292, y: 30}
+  m_AnchoredPosition: {x: -0.0017954, y: -31.657997}
+  m_SizeDelta: {x: 321.91, y: 63.316}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &686706137
 MonoBehaviour:
@@ -1222,6 +1277,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 686706135}
   m_CullTransparentMesh: 1
+--- !u!114 &686706140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 686706135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 560a1d184acd6014cbb4c3b3344f9e1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCorrect: 0
+  quizManager: {fileID: 629328017}
 --- !u!1 &774064343
 GameObject:
   m_ObjectHideFlags: 0
@@ -1471,7 +1540,7 @@ GameObject:
   - component: {fileID: 967787739}
   - component: {fileID: 967787738}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2477,8 +2546,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 151.99}
-  m_SizeDelta: {x: 332.3145, y: 40.4607}
+  m_AnchoredPosition: {x: 0.0000076293945, y: 112.00001}
+  m_SizeDelta: {x: 397.096, y: 107.0932}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1634083738
 MonoBehaviour:
@@ -2500,7 +2569,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Choose an emotion!
+  m_text: '* SCENARIO PROMPT*
+
+    Choose an emotion!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2760,7 +2831,7 @@ GameObject:
   - component: {fileID: 1797539225}
   - component: {fileID: 1797539224}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3025,7 +3096,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1929224323
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3043,7 +3114,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 188.99731, y: -10.044495}
+  m_AnchoredPosition: {x: 165, y: -12}
   m_SizeDelta: {x: 23.9191, y: 202.5437}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1935165854
@@ -3058,6 +3129,7 @@ GameObject:
   - component: {fileID: 1935165858}
   - component: {fileID: 1935165857}
   - component: {fileID: 1935165856}
+  - component: {fileID: 1935165859}
   m_Layer: 0
   m_Name: Emotion1 Button
   m_TagString: Untagged
@@ -3082,8 +3154,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -171.58829, y: 112}
-  m_SizeDelta: {x: 136.8234, y: 30}
+  m_AnchoredPosition: {x: -0.000014305, y: 49}
+  m_SizeDelta: {x: 321.9136, y: 63.3162}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1935165856
 MonoBehaviour:
@@ -3179,6 +3251,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1935165854}
   m_CullTransparentMesh: 1
+--- !u!114 &1935165859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935165854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 560a1d184acd6014cbb4c3b3344f9e1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCorrect: 0
+  quizManager: {fileID: 629328017}
 --- !u!1 &2006878988
 GameObject:
   m_ObjectHideFlags: 0
@@ -3336,6 +3422,7 @@ GameObject:
   - component: {fileID: 2030841101}
   - component: {fileID: 2030841100}
   - component: {fileID: 2030841099}
+  - component: {fileID: 2030841102}
   m_Layer: 0
   m_Name: Emotion3 Button
   m_TagString: Untagged
@@ -3360,8 +3447,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 170, y: 112}
-  m_SizeDelta: {x: 136.83, y: 30}
+  m_AnchoredPosition: {x: 0.0018183, y: -109}
+  m_SizeDelta: {x: 321.91, y: 63.316}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2030841099
 MonoBehaviour:
@@ -3457,6 +3544,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2030841097}
   m_CullTransparentMesh: 1
+--- !u!114 &2030841102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2030841097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 560a1d184acd6014cbb4c3b3344f9e1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCorrect: 0
+  quizManager: {fileID: 629328017}
 --- !u!1 &2033016869
 GameObject:
   m_ObjectHideFlags: 0
@@ -3469,7 +3570,7 @@ GameObject:
   - component: {fileID: 2033016872}
   - component: {fileID: 2033016871}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3876,5 +3977,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 774064346}
   - {fileID: 298354568}
+  - {fileID: 629328018}
   - {fileID: 1190937907}
   - {fileID: 1206189672}
