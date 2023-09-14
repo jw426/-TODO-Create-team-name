@@ -15,7 +15,6 @@ public class QuizManager : MonoBehaviour
     public GameObject QuizPanel;
     public GameObject GoPanel;
 
-    public TMP_Text QuestionTxt;
     public TMP_Text ScoreTxt;
     int totalQuestions = 0;
     public int score;
@@ -39,7 +38,8 @@ public class QuizManager : MonoBehaviour
     {
         QuizPanel.SetActive(false);
         GoPanel.SetActive(true);
-        ScoreTxt.text = 
+
+        ScoreTxt.text = "Score: " + score + "/" + totalQuestions + "/n Hearts earned: ???";
     }
 
 /// <summary>
@@ -47,6 +47,15 @@ public class QuizManager : MonoBehaviour
 /// </summary>
     public void correct()
     {
+        // when correct
+        score += 1;
+        QnA.RemoveAt(currentQuestion);
+        generateQuestion();
+    }
+
+    public void wrong()
+    {
+        // when incorrect
         QnA.RemoveAt(currentQuestion);
         generateQuestion();
     }

@@ -564,7 +564,7 @@ GameObject:
   - component: {fileID: 361735901}
   - component: {fileID: 361735900}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: Score Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -586,8 +586,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000085831, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 6.4194, y: 0}
+  m_SizeDelta: {x: 569.7564, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &361735900
 MonoBehaviour:
@@ -645,7 +645,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1492,6 +1492,8 @@ MonoBehaviour:
   QuestionTxt: {fileID: 1634083738}
   QuizPanel: {fileID: 1929224322}
   GoPanel: {fileID: 364833966}
+  ScoreTxt: {fileID: 361735900}
+  score: 0
 --- !u!4 &629328018
 Transform:
   m_ObjectHideFlags: 0
@@ -4350,8 +4352,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -158, y: -102}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 13, y: -109}
+  m_SizeDelta: {x: 280.6844, y: 59.5291}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2047117869
 MonoBehaviour:
@@ -4396,7 +4398,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2047117870}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 629328017}
+        m_TargetAssemblyTypeName: QuizManager, Assembly-CSharp
+        m_MethodName: retry
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2047117870
 MonoBehaviour:
   m_ObjectHideFlags: 0

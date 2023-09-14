@@ -20,7 +20,7 @@ public class Answers : MonoBehaviour
         else
         {
             Debug.Log("Incorrect Answer");
-            quizManager.correct();
+            quizManager.wrong();
         }
     }
 }
