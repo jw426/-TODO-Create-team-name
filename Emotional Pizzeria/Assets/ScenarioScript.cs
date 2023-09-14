@@ -5,19 +5,20 @@ using System.IO;
 
 public class ScenarioScript : MonoBehaviour
 {
-    public string[] dir; 
-    public string curDir; 
     [SerializeField] private GameObject TextObject;
+    [SerializeField] private GameObject ExpObject;
 
     // Start is called before the first frame update
     void Start()
     {
-        dir = Directory.GetDirectories("Assets/Resources/Scenarios");
-        curDir = dir[Random.Range(0, dir.Length)];
+        string[] dir = Directory.GetDirectories("Assets/Resources/Scenarios");
+        string curDir = dir[Random.Range(0, dir.Length)];
         
-
         TextScript sc = TextObject.GetComponent<TextScript>();
         sc.SetText(curDir);
+
+        ExpressionScript esc = ExpObject.GetComponent<ExpressionScript>();
+        esc.SetExpression(curDir);
         //Debug.Log(curDir);
         //Debug.Log("Hello" + curDir);
     }
