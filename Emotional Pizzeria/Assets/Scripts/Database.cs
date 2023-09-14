@@ -64,17 +64,18 @@ public class Database : MonoBehaviour
     /// Adds n hearts to the database
     /// </summary>
     /// <param name="n"> The number of hearts to add to the database </param>
-    public void addHeart(int n) { 
+    public void addHeart() { 
         using (var conn = new SqliteConnection(dbName))
         {
             conn.Open();
 
             using (var cmd = conn.CreateCommand())
             {
-                curNumHearts+=n;
+                curNumHearts+=1;
                 cmd.CommandText = $"insert into game1_hearts(hearts) values({curNumHearts});";
                 cmd.ExecuteNonQuery();
                 Debug.Log("Added hearts");
+                //showHearts();
             }
 
             conn.Close();
