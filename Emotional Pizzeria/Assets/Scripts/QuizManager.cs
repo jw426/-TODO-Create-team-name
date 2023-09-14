@@ -39,8 +39,15 @@ public class QuizManager : MonoBehaviour
 
     void generateQuestion()
     {
-        currentQuestion = Random.Range(0, QnA.Count);
-        QuestionTxt.text = QnA[currentQuestion].Question;
-        setAnswers();
+        if(QnA.Count > 0)
+        {
+            currentQuestion = Random.Range(0, QnA.Count);
+            QuestionTxt.text = QnA[currentQuestion].Question;
+            setAnswers();
+        }
+        else
+        {
+            Debug.Log("Out of Questions");
+        }
     }
 }
