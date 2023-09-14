@@ -39,15 +39,10 @@ public class KeepBGMusicPlaying : MonoBehaviour
 
 /// <summary>
 /// author - Rimon; last date modified - 14 September 2023
-/// Just runs a check every frame to see if we've moved into the Level One scene-- if we do then we should stop playing
-/// the audio.
-/// </summary>
+/// Shouldn't be doing anything with this script once we've made it
     void Update()
     {
-        /* We only stop the music from playing once we enter level 1 */
-        if (SceneManager.GetActiveScene().name == "Level 1")
-        {
-            Destroy(this.gameObject);
-        }
+
     }
+    
 }
