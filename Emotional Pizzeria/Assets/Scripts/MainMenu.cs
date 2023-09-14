@@ -20,6 +20,11 @@ public class MainMenu : MonoBehaviour
     public void StartGame()
     {
         SceneManager.LoadScene("Level 1");
+        GameObject[] bgmObjects = GameObject.FindGameObjectsWithTag("bgm");
+        foreach (GameObject bgmObject in bgmObjects)
+        {
+            Destroy(bgmObject);
+        }
         Debug.Log("The game has started.");
     }
 
