@@ -9,20 +9,28 @@ public class QuizManager : MonoBehaviour
     public List<QuestionAndAnswers> QnA = new List<QuestionAndAnswers>();
     public GameObject[] options;
     public int currentQuestion;
-
     public TMP_Text QuestionTxt;
 
+/// <summary>
+/// loads question
+/// </summary>
     private void Start() 
     {
         generateQuestion();
     }
 
+/// <summary>
+/// removes quetsion once answered and generates new question
+/// </summary>
     public void correct()
     {
         QnA.RemoveAt(currentQuestion);
         generateQuestion();
     }
 
+/// <summary>
+/// reads input from inspector, and sets the answer as True
+/// </summary>
     void setAnswers()
     {
         for (int i = 0; i < options.Length; i++)
@@ -37,6 +45,9 @@ public class QuizManager : MonoBehaviour
         }
     }
 
+/// <summary>
+/// load new question, unless out of questions
+/// </summary>
     void generateQuestion()
     {
         if(QnA.Count > 0)

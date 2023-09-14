@@ -6,6 +6,10 @@ public class Answers : MonoBehaviour
 {
     public bool isCorrect = false;
     public QuizManager quizManager;
+
+    /// <summary>
+    /// reads isCorrect and generates new question through correct()
+    /// </summary>
     public void Answer()
     {
         if(isCorrect)
