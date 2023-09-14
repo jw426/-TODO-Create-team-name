@@ -39,7 +39,7 @@ public class QuizManager : MonoBehaviour
         QuizPanel.SetActive(false);
         GoPanel.SetActive(true);
 
-        ScoreTxt.text = "Score: " + score + "/" + totalQuestions + "/n Hearts earned: ???";
+        ScoreTxt.text = "Score: " + score + "/" + totalQuestions + "\n Hearts earned: ???";
     }
 
 /// <summary>
