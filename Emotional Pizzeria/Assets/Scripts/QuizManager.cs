@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class QuizManager : MonoBehaviour
 {
@@ -11,12 +12,27 @@ public class QuizManager : MonoBehaviour
     public int currentQuestion;
     public TMP_Text QuestionTxt;
 
+    public GameObject QuizPanel;
+    public GameObject GoPanel;
+
 /// <summary>
 /// loads question
 /// </summary>
     private void Start() 
-    {
+    {   
+        GoPanel.SetActive(false);
         generateQuestion();
+    }
+
+    public void retry()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    void GameOver()
+    {
+        QuizPanel.SetActive(false);
+        GoPanel.SetActive(true);
     }
 
 /// <summary>
@@ -59,6 +75,7 @@ public class QuizManager : MonoBehaviour
         else
         {
             Debug.Log("Out of Questions");
+            GameOver();
         }
     }
 }
