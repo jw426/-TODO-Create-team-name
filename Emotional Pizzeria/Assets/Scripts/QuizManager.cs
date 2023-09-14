@@ -15,11 +15,17 @@ public class QuizManager : MonoBehaviour
     public GameObject QuizPanel;
     public GameObject GoPanel;
 
+    public TMP_Text QuestionTxt;
+    public TMP_Text ScoreTxt;
+    int totalQuestions = 0;
+    public int score;
+
 /// <summary>
 /// loads question
 /// </summary>
     private void Start() 
     {   
+        totalQuestions = QnA.Count;
         GoPanel.SetActive(false);
         generateQuestion();
     }
@@ -33,6 +39,7 @@ public class QuizManager : MonoBehaviour
     {
         QuizPanel.SetActive(false);
         GoPanel.SetActive(true);
+        ScoreTxt.text = 
     }
 
 /// <summary>
