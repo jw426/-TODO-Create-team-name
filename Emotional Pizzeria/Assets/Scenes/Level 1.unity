@@ -1893,7 +1893,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a38415a39045908409a11ef5a003361a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customer: {fileID: 1038468155}
   tmp: {fileID: 990673182}
 --- !u!114 &990673182
 MonoBehaviour:
@@ -2081,6 +2080,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1038468156}
   - component: {fileID: 1038468157}
+  - component: {fileID: 1038468158}
   m_Layer: 0
   m_Name: Customer
   m_TagString: Untagged
@@ -2121,8 +2121,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e232aea90e34bc94f849353d927427f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dir: []
-  curDir: 
+  TextObject: {fileID: 990673179}
+  ExpObject: {fileID: 1505044657}
+--- !u!114 &1038468158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038468155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79381b5ddd8b4f74da9e089f05ad5a5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 0}
+  tmpProText: {fileID: 990673182}
+  delayBeforeStart: 0
+  timeBtwChars: 0.1
+  leadingChar: 
+  leadingCharBeforeDelay: 0
+  startOnEnable: 0
+  clearAtStart: 0
+  startOnCollision: 0
+  collisionExitOptions: 0
 --- !u!1 &1113704164
 GameObject:
   m_ObjectHideFlags: 0
@@ -2555,7 +2577,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1652b9bb927822249bdb47db1c1bf501, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customer: {fileID: 1038468155}
 --- !u!1 &1565059853
 GameObject:
   m_ObjectHideFlags: 0
