@@ -29,7 +29,7 @@ public class typewriterUI_v2 : MonoBehaviour
 	[SerializeField] options collisionExitOptions;
 
 	// Use this for initialization
-	void Awake()
+	public void Awake()
 	{
 		if(text != null)
 		{
@@ -42,8 +42,10 @@ public class typewriterUI_v2 : MonoBehaviour
 		}
 	}
 
+
 	void Start()
 	{
+		
 		if (!clearAtStart ) return;
 		if(text != null)
 		{
@@ -54,7 +56,9 @@ public class typewriterUI_v2 : MonoBehaviour
 		{
 			tmpProText.text = "";
 		}
+		
 	}
+	
 
 	private void OnEnable()
 	{
