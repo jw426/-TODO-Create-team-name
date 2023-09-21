@@ -10,21 +10,17 @@ public class ExpressionScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-    
-    }
-
-    public void SetExpression(string path) {
-    
-        string[] files = Directory.GetFiles(Path.Combine(path, "sprite"));
-        string[] filtered = Array.FindAll(files, files => 
-                                            !files.EndsWith("meta"));
-
-        for (int iFile = 0; iFile < filtered.Length; iFile++)
-        {
-            filtered[iFile] = Path.GetFileNameWithoutExtension(filtered[iFile]);
+        if (this.gameObject.name == "ExpressionSummary") {
+            Initialize();
         }
-
-        string exp_chosen = filtered[UnityEngine.Random.Range(0, filtered.Length)];
-        GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>(exp_chosen);
     }
+
+    public void Initialize() {
+        this.gameObject.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>(ScenarioScript.exp);
+    }
+
+    public void Initialize(string sp_filename) {
+        this.gameObject.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>(sp_filename);
+    }
+
 }
