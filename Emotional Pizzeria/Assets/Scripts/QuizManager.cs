@@ -34,6 +34,16 @@ public class QuizManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
+    public void backToMain()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
+    
+    public void nextLevel()
+    {
+        SceneManager.LoadScene("Level 2");
+    }
+
     void GameOver()
     {
         QuizPanel.SetActive(false);
