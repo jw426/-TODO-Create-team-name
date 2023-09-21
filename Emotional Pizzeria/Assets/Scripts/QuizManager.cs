@@ -38,6 +38,11 @@ public class QuizManager : MonoBehaviour
     {
         SceneManager.LoadScene("Main Menu");
     }
+    
+    public void nextLevel()
+    {
+        SceneManager.LoadScene("Level 2");
+    }
 
     void GameOver()
     {
