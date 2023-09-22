@@ -29,6 +29,7 @@ rcismail@student.unimelb.edu.au
 Our game is meant to be played on an iphone, but it is also useful to test on a desktop. Therefore, we have included instructions on how to deploy the game to both iphone and a Windows desktop
 
 **Deployment to iPhone**
+
 This will result in a .ipa file. These steps assume you don’t have a 'Build' folder in the provided codebase. If you do, skip to step 7
 
 1. Download Unity at Download, making sure to install the latest editor version
@@ -52,6 +53,7 @@ This will result in a .ipa file. These steps assume you don’t have a 'Build' f
 10. Rename the zipped folder to 'EmotionalPizzeria.ipa'
 
 **Deployment to a Windows desktop**
+
 This will result in a .exe file. These steps assume you don’t have a 'Build' folder in the provided codebase. If you do, skip to step 7
 
 1. Download Unity at Download, making sure to install the latest editor version
