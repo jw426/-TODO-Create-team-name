@@ -1,0 +1,9 @@
+Angry
+Happy
+Excited
+Worried
+Left Out
+Bored
+Tired
+Surprised
+Offended

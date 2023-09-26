@@ -6,9 +6,9 @@ using System.IO;
 
 public class ScenarioScript : MonoBehaviour
 {
-    [SerializeField] private GameObject TextObject;
+    // [SerializeField] private GameObject TextObject;
     [SerializeField] private GameObject ExpObject;
-    public string curDir; 
+    public static string curDir; 
     public static string exp; 
     public static string text; 
 
@@ -18,9 +18,9 @@ public class ScenarioScript : MonoBehaviour
         string[] dir = Directory.GetDirectories("Assets/Resources/Scenarios");
         curDir = dir[UnityEngine.Random.Range(0, dir.Length)];
         
-        TextScript sc = TextObject.GetComponent<TextScript>();
+        //TextScript sc = TextObject.GetComponent<TextScript>();
         text = SetText();
-        sc.Initialize(text);
+        // sc.Initialize(text);
 
         ExpressionScript esc = ExpObject.GetComponent<ExpressionScript>();
         exp = SetExpression();
@@ -51,8 +51,9 @@ public class ScenarioScript : MonoBehaviour
                                             !files.EndsWith("meta"));
 
         string sit_chosen = filtered[UnityEngine.Random.Range(0, filtered.Length)];
+        return sit_chosen; 
         //StreamReader reader = new StreamReader(sit_chosen);
-        return sit_chosen;
+        //return reader.ReadToEnd();
         //sc.Initialize(text);
         //return text; 
     }

@@ -16,18 +16,23 @@ public class TextScript : MonoBehaviour
     [SerializeField] private GameObject prompt;
     [SerializeField] private GameObject customer; 
     [SerializeField] private GameObject takeOrder; 
-    [SerializeField] private GameObject scManager;  
+    [SerializeField] private GameObject scManager;
+    private ScenarioScript sc;  
 
     private bool textSkipped = false; 
     public bool textFinished = false; 
     private static bool updateOn = true; 
     private string txt; 
+    private bool running = false; 
 
 
     void Start() {
 
+        sc = scManager.GetComponent<ScenarioScript>();
         if (this.gameObject.name == "ScenarioSummary") {
             Initialize();
+        } else {
+            
         }
     }
 
@@ -35,6 +40,11 @@ public class TextScript : MonoBehaviour
 
         if (this.gameObject.name == "ScenarioSummary") {
             return;
+        }
+
+        if (ScenarioScript.text != null && !running) {
+            running = true; 
+            Initialize(ScenarioScript.text);
         }
 
         if (textFinished || (textFinished && Input.GetMouseButtonDown(0))) {
@@ -55,6 +65,8 @@ public class TextScript : MonoBehaviour
         ScenarioScript sc = scManager.GetComponent<ScenarioScript>();
         StreamReader reader = new StreamReader(ScenarioScript.text);
         tmp.text = reader.ReadToEnd();
+        //tmp.text = ScenarioScript.text; 
+        //Debug.Log("here");
         
         //Debug.Log(sc.curDir);
         //Debug.Log(sc.text);
@@ -64,7 +76,10 @@ public class TextScript : MonoBehaviour
     }
 
     public void Initialize(string path) {
+
+        //Debug.Log("this is triggered");
         
+        //Debug.Log(path);
         StreamReader reader = new StreamReader(path);
 
         //tmp.text = situation;

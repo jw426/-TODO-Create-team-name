@@ -2251,6 +2251,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCorrect: 0
+  tmp: {fileID: 2033016871}
+  promptManager: {fileID: 1002199702}
   quizManager: {fileID: 75423119}
 --- !u!1 &691506090
 GameObject:
@@ -3315,6 +3317,7 @@ GameObject:
   - component: {fileID: 1002199703}
   - component: {fileID: 1002199705}
   - component: {fileID: 1002199704}
+  - component: {fileID: 1002199706}
   m_Layer: 0
   m_Name: Prompt Panel
   m_TagString: Untagged
@@ -3383,6 +3386,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1002199702}
   m_CullTransparentMesh: 1
+--- !u!114 &1002199706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002199702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d6f42c476bde434386e392e8837b9cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scManager: {fileID: 1338728269}
+  emotionBtns:
+  - {fileID: 1935165854}
+  - {fileID: 686706135}
+  - {fileID: 2030841097}
+  correct: 
 --- !u!1 &1038468155
 GameObject:
   m_ObjectHideFlags: 0
@@ -3434,7 +3455,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e232aea90e34bc94f849353d927427f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TextObject: {fileID: 990673179}
   ExpObject: {fileID: 1505044657}
   curDir: 
 --- !u!114 &1038468158
@@ -4242,7 +4262,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e232aea90e34bc94f849353d927427f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TextObject: {fileID: 0}
   ExpObject: {fileID: 1505044657}
   curDir: 
 --- !u!4 &1338728271
@@ -5573,6 +5592,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCorrect: 0
+  tmp: {fileID: 1797539224}
+  promptManager: {fileID: 1002199702}
   quizManager: {fileID: 75423119}
 --- !u!1 &2006878988
 GameObject:
@@ -5878,6 +5899,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCorrect: 1
+  tmp: {fileID: 967787738}
+  promptManager: {fileID: 1002199702}
   quizManager: {fileID: 75423119}
 --- !u!1 &2033016869
 GameObject:
