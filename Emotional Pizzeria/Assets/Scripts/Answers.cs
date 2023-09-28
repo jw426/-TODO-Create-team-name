@@ -13,13 +13,11 @@ public class Answers : MonoBehaviour
     /// <summary>
     /// reads isCorrect and generates new question through correct()
     /// </summary>
-
     public void assignValue(string option, bool correct) {
         isCorrect = correct;
         //EmotionScript sc = promptManager.GetComponent<EmotionScript>();
         tmp.text = option; 
     }
-
 
     public void Answer()
     {
