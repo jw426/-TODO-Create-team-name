@@ -13,7 +13,7 @@ public class ExpressionScript : MonoBehaviour
     
     }
 
-    public void SetExpression(string path) {
+    public void SetExpressionByFolder(string path) {
     
         string[] files = Directory.GetFiles(Path.Combine(path, "sprite"));
         string[] filtered = Array.FindAll(files, files => 
@@ -26,5 +26,10 @@ public class ExpressionScript : MonoBehaviour
 
         string exp_chosen = filtered[UnityEngine.Random.Range(0, filtered.Length)];
         GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>(exp_chosen);
+    }
+    
+    public void SetExpressionByFile(string path) {
+        Debug.Log(path);
+        GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>(path);
     }
 }

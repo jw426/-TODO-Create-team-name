@@ -14,7 +14,7 @@ public class TextScript : MonoBehaviour
 
     private string txt; 
 
-    public void SetText(string path) {
+    public void SetTextByPath(string path) {
         Debug.Log(path);
 
         string[] files = Directory.GetFiles(Path.Combine(path, "situation"));
@@ -30,6 +30,12 @@ public class TextScript : MonoBehaviour
         txt = situation;
         StartCoroutine("TypeWriterTMP");
         //TypeWriterTMP(situation);
+    }
+
+    public void SetTextByString(string text) {
+        tmp.text = "";
+        txt = text;
+        StartCoroutine("TypeWriterTMP");
     }
 
     IEnumerator TypeWriterTMP()

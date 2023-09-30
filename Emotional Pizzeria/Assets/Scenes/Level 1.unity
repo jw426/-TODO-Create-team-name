@@ -2589,6 +2589,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TextObject: {fileID: 990673179}
   ExpObject: {fileID: 1505044657}
+  emotionsJSON: {fileID: 4900000, guid: 81ed2583d66e15041ae1a53a459ea3a4, type: 3}
+  emotionList:
+    emotions: []
 --- !u!114 &1038468158
 MonoBehaviour:
   m_ObjectHideFlags: 0
