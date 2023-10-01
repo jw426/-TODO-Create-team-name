@@ -9,6 +9,9 @@ public class ScenarioScript : MonoBehaviour
     [SerializeField] private GameObject ExpObject;
     [SerializeField] public TextAsset emotionsJSON;
 
+    /// <summary>
+    /// This class stores the data for a single emotion
+    /// </summary>
     [System.Serializable]
     public class Emotion{
         public string name;
@@ -17,6 +20,9 @@ public class ScenarioScript : MonoBehaviour
         public string[] scenarios;
     }
 
+    /// <summary>
+    /// This class stores the data for a list of emotions
+    /// </summary>
     [System.Serializable]
     public class EmotionList{
         public Emotion[] emotions;

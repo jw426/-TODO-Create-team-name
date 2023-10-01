@@ -14,6 +14,10 @@ public class TextScript : MonoBehaviour
 
     private string txt; 
 
+    /// <summary>
+    /// This function chooses a random scenario from the folder "situation" in the given path
+    /// </summary>
+    /// <param name="path"></param>
     public void SetTextByPath(string path) {
         Debug.Log(path);
 
@@ -32,6 +36,10 @@ public class TextScript : MonoBehaviour
         //TypeWriterTMP(situation);
     }
 
+    /// <summary>
+    /// This function sets the text to the given string
+    /// </summary>
+    /// <param name="text"></param>
     public void SetTextByString(string text) {
         tmp.text = "";
         txt = text;
