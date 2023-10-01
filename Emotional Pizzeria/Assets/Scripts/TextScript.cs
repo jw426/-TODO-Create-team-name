@@ -14,7 +14,11 @@ public class TextScript : MonoBehaviour
 
     private string txt; 
 
-    public void SetText(string path) {
+    /// <summary>
+    /// This function chooses a random scenario from the folder "situation" in the given path
+    /// </summary>
+    /// <param name="path"></param>
+    public void SetTextByPath(string path) {
         Debug.Log(path);
 
         string[] files = Directory.GetFiles(Path.Combine(path, "situation"));
@@ -30,6 +34,16 @@ public class TextScript : MonoBehaviour
         txt = situation;
         StartCoroutine("TypeWriterTMP");
         //TypeWriterTMP(situation);
+    }
+
+    /// <summary>
+    /// This function sets the text to the given string
+    /// </summary>
+    /// <param name="text"></param>
+    public void SetTextByString(string text) {
+        tmp.text = "";
+        txt = text;
+        StartCoroutine("TypeWriterTMP");
     }
 
     IEnumerator TypeWriterTMP()
