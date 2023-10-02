@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine; 
 using System;
 using System.IO;
+using System.Linq;
 
 /*
 public class ScenarioScript : MonoBehaviour
@@ -63,9 +64,10 @@ public class ScenarioScript : MonoBehaviour
 
 public class ScenarioScript : MonoBehaviour
 {
-    [SerializeField] private GameObject TextObject;
+    //[SerializeField] private GameObject TextObject;
     [SerializeField] private GameObject ExpObject;
     [SerializeField] public TextAsset emotionsJSON;
+    public static string text;
 
     /// <summary>
     /// This class stores the data for a single emotion
@@ -104,11 +106,11 @@ public class ScenarioScript : MonoBehaviour
         
         // Choose a random emotion, and for that emotion, choose a random scenario
         chosenEmotion = filteredEmotionList[UnityEngine.Random.Range(0, filteredEmotionList.Length)];
-        string scenario = chosenEmotion.scenarios[UnityEngine.Random.Range(0, chosenEmotion.scenarios.Length)];
+        text = chosenEmotion.scenarios[UnityEngine.Random.Range(0, chosenEmotion.scenarios.Length)];
 
         // Set the text to have that scenario, and the expression to be the emotion's sprite
-        TextScript sc = TextObject.GetComponent<TextScript>();
-        sc.SetTextByString(scenario);
+        //TextScript sc = TextObject.GetComponent<TextScript>();
+        //sc.SetTextByString(scenario);
 
         ExpressionScript esc = ExpObject.GetComponent<ExpressionScript>();
         esc.SetExpressionByFile("Sprites/" + chosenEmotion.sprite);

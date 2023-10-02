@@ -3301,11 +3301,6 @@ MonoBehaviour:
   tmp: {fileID: 990673182}
   delayBeforeStart: 0
   timeBtwChars: 0.1
-  prompt: {fileID: 1929224322}
-  customer: {fileID: 1038468155}
-  takeOrder: {fileID: 119300962}
-  scManager: {fileID: 1338728269}
-  textFinished: 0
 --- !u!1 &1002199702
 GameObject:
   m_ObjectHideFlags: 0
@@ -3404,6 +3399,7 @@ MonoBehaviour:
   - {fileID: 686706135}
   - {fileID: 2030841097}
   correct: 
+  wrongEmotions: []
 --- !u!1 &1038468155
 GameObject:
   m_ObjectHideFlags: 0
@@ -3456,7 +3452,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ExpObject: {fileID: 1505044657}
-  curDir: 
+  emotionsJSON: {fileID: 4900000, guid: 81ed2583d66e15041ae1a53a459ea3a4, type: 3}
+  emotionList:
+    emotions: []
+  chosenEmotion:
+    name: 
+    sprite: 
+    difficulty: 0
+    scenarios: []
 --- !u!114 &1038468158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4228,11 +4231,6 @@ MonoBehaviour:
   tmp: {fileID: 1317452100}
   delayBeforeStart: 0
   timeBtwChars: 0.1
-  prompt: {fileID: 0}
-  customer: {fileID: 0}
-  takeOrder: {fileID: 0}
-  scManager: {fileID: 1338728269}
-  textFinished: 0
 --- !u!1 &1338728269
 GameObject:
   m_ObjectHideFlags: 0
@@ -4263,7 +4261,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ExpObject: {fileID: 1505044657}
-  curDir: 
+  emotionsJSON: {fileID: 4900000, guid: 81ed2583d66e15041ae1a53a459ea3a4, type: 3}
+  emotionList:
+    emotions: []
+  chosenEmotion:
+    name: 
+    sprite: 
+    difficulty: 0
+    scenarios: []
 --- !u!4 &1338728271
 Transform:
   m_ObjectHideFlags: 0
