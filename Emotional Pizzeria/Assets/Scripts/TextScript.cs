@@ -5,7 +5,7 @@ using UnityEngine;
 using TMPro;
 using System.Collections.Generic;
 
-/*
+
 public class TextScript : MonoBehaviour
 {
     [SerializeField] private TMP_Text tmp;
@@ -45,7 +45,7 @@ public class TextScript : MonoBehaviour
 
         if (ScenarioScript.text != null && !running) {
             running = true; 
-            Initialize(ScenarioScript.text);
+            InitializeByString(ScenarioScript.text);
         }
 
         if (textFinished || (textFinished && Input.GetMouseButtonDown(0))) {
@@ -64,9 +64,9 @@ public class TextScript : MonoBehaviour
 
         
         ScenarioScript sc = scManager.GetComponent<ScenarioScript>();
-        StreamReader reader = new StreamReader(ScenarioScript.text);
-        tmp.text = reader.ReadToEnd();
-        //tmp.text = ScenarioScript.text; 
+        //StreamReader reader = new StreamReader(ScenarioScript.text);
+        //tmp.text = reader.ReadToEnd();
+        tmp.text = ScenarioScript.text; 
         //Debug.Log("here");
         
         //Debug.Log(sc.curDir);
@@ -90,6 +90,19 @@ public class TextScript : MonoBehaviour
         //TypeWriterTMP(situation);
     }
 
+    public void InitializeByString(string scenario)
+    {
+
+        //Debug.Log("this is triggered");
+
+        //Debug.Log(path);
+        //tmp.text = situation;
+        tmp.text = "";
+        txt = scenario;
+        StartCoroutine("TypeWriterTMP");       
+        //TypeWriterTMP(situation);
+    }
+
     IEnumerator TypeWriterTMP()
     {
         yield return new WaitForSeconds(delayBeforeStart);
@@ -109,60 +122,61 @@ public class TextScript : MonoBehaviour
         textFinished = true; 
     }
 
+
  
 }
-*/
 
-public class TextScript : MonoBehaviour
-{
-    [SerializeField] private TMP_Text tmp;
-    [SerializeField] private Coroutine coroutine;
 
-    [SerializeField] float delayBeforeStart = 0f;
-    [SerializeField] float timeBtwChars = 0.1f;
+//public class TextScript : MonoBehaviour
+//{
+//    [SerializeField] private TMP_Text tmp;
+//    [SerializeField] private Coroutine coroutine;
 
-    private string txt; 
+//    [SerializeField] float delayBeforeStart = 0f;
+//    [SerializeField] float timeBtwChars = 0.1f;
 
-    /// <summary>
-    /// This function chooses a random scenario from the folder "situation" in the given path
-    /// </summary>
-    /// <param name="path"></param>
-    public void SetTextByPath(string path) {
-        Debug.Log(path);
+//    private string txt; 
 
-        string[] files = Directory.GetFiles(Path.Combine(path, "situation"));
-        string[] filtered = Array.FindAll(files, files => 
-                                            !files.EndsWith("meta"));
+//    /// <summary>
+//    /// This function chooses a random scenario from the folder "situation" in the given path
+//    /// </summary>
+//    /// <param name="path"></param>
+//    public void SetTextByPath(string path) {
+//        Debug.Log(path);
 
-        string sit_chosen = filtered[UnityEngine.Random.Range(0, filtered.Length)];
-        StreamReader reader = new StreamReader(sit_chosen);
-        string situation = reader.ReadToEnd();
+//        string[] files = Directory.GetFiles(Path.Combine(path, "situation"));
+//        string[] filtered = Array.FindAll(files, files => 
+//                                            !files.EndsWith("meta"));
 
-        //tmp.text = situation;
-        tmp.text = "";
-        txt = situation;
-        StartCoroutine("TypeWriterTMP");
-        //TypeWriterTMP(situation);
-    }
+//        string sit_chosen = filtered[UnityEngine.Random.Range(0, filtered.Length)];
+//        StreamReader reader = new StreamReader(sit_chosen);
+//        string situation = reader.ReadToEnd();
 
-    /// <summary>
-    /// This function sets the text to the given string
-    /// </summary>
-    /// <param name="text"></param>
-    public void SetTextByString(string text) {
-        tmp.text = "";
-        txt = text;
-        StartCoroutine("TypeWriterTMP");
-    }
+//        //tmp.text = situation;
+//        tmp.text = "";
+//        txt = situation;
+//        StartCoroutine("TypeWriterTMP");
+//        //TypeWriterTMP(situation);
+//    }
 
-    IEnumerator TypeWriterTMP()
-    {
-        yield return new WaitForSeconds(delayBeforeStart);
+//    /// <summary>
+//    /// This function sets the text to the given string
+//    /// </summary>
+//    /// <param name="text"></param>
+//    public void SetTextByString(string text) {
+//        tmp.text = "";
+//        txt = text;
+//        StartCoroutine("TypeWriterTMP");
+//    }
 
-        foreach (char c in txt)
-        {
-            tmp.text += c;
-            yield return new WaitForSeconds(timeBtwChars);
-        }
-    }
-}
+//    IEnumerator TypeWriterTMP()
+//    {
+//        yield return new WaitForSeconds(delayBeforeStart);
+
+//        foreach (char c in txt)
+//        {
+//            tmp.text += c;
+//            yield return new WaitForSeconds(timeBtwChars);
+//        }
+//    }
+//}

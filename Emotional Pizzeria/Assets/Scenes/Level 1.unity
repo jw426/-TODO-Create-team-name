@@ -3301,6 +3301,11 @@ MonoBehaviour:
   tmp: {fileID: 990673182}
   delayBeforeStart: 0
   timeBtwChars: 0.1
+  prompt: {fileID: 0}
+  customer: {fileID: 0}
+  takeOrder: {fileID: 119300962}
+  scManager: {fileID: 1338728269}
+  textFinished: 0
 --- !u!1 &1002199702
 GameObject:
   m_ObjectHideFlags: 0
@@ -4231,6 +4236,11 @@ MonoBehaviour:
   tmp: {fileID: 1317452100}
   delayBeforeStart: 0
   timeBtwChars: 0.1
+  prompt: {fileID: 0}
+  customer: {fileID: 0}
+  takeOrder: {fileID: 119300962}
+  scManager: {fileID: 1338728269}
+  textFinished: 0
 --- !u!1 &1338728269
 GameObject:
   m_ObjectHideFlags: 0
