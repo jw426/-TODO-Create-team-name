@@ -1,9 +1,510 @@
-Angry
-Happy
-Excited
-Worried
-Left Out
-Bored
-Tired
-Surprised
-Offended
+{
+  "emotions": [
+    {
+      "name": "Joy",
+      "sprite": "e11",
+      "difficulty": 1,
+      "scenarios": [
+        "I received a surprise gift on my birthday.",
+        "I won a game I really enjoy playing with my friends.",
+        "I got to spend a day at my favorite amusement park.",
+        "I found a cute puppy and got to play with it."
+      ]
+    },
+    {
+      "name": "Sadness",
+      "sprite": "e5",
+      "difficulty": 1,
+      "scenarios": [
+        "I lost my favorite toy and couldn't find it anywhere.",
+        "My best friend moved to a different city, and I miss them a lot.",
+        "I didn't do well on a test at school, and it made me feel sad.",
+        "I had to say goodbye to my pet because it got sick."
+      ]
+    },
+    {
+      "name": "Anger",
+      "sprite": "e3",
+      "difficulty": 1,
+      "scenarios": [
+        "Someone took my favorite snack without asking, and I got really mad.",
+        "I had an argument with my sibling, and we both yelled at each other.",
+        "A friend broke my toy, and I felt angry because they didn't apologize.",
+        "I got in trouble for something I didn't do, and it made me furious."
+      ]
+    },
+    {
+      "name": "Fear",
+      "sprite": "e1",
+      "difficulty": 1,
+      "scenarios": [
+        "I heard a strange noise at night when I was alone in my room.",
+        "I watched a scary movie, and it gave me nightmares.",
+        "I got lost in a big store and couldn't find my parents.",
+        "I saw a spider in my room, and I'm really scared of spiders."
+      ]
+    },
+    {
+      "name": "Relief",
+      "sprite": "e9",
+      "difficulty": 1,
+      "scenarios": [
+        "I thought I lost my favorite book but found it under my bed.",
+        "I was worried I'd miss my school bus, but I made it just in time.",
+        "I accidentally spilled juice, but it didn't stain my new shirt.",
+        "I thought I forgot to do my homework, but I found it in my backpack."
+      ]
+    },
+    {
+      "name": "Euphoria",
+      "sprite": "e11",
+      "difficulty": 2,
+      "scenarios": [
+        "I won first place in a school talent show, and everyone clapped for me.",
+        "I found out I was going to Disneyland, and I couldn't stop smiling.",
+        "I got a surprise visit from a celebrity I really admire.",
+        "I received a giant ice cream sundae with all my favorite toppings."
+      ]
+    },
+    {
+      "name": "Despair",
+      "sprite": "e1",
+      "difficulty": 2,
+      "scenarios": [
+        "I lost my school project the night before it was due, and I couldn't redo it.",
+        "My pet ran away from home, and I searched for it everywhere.",
+        "I got really sick and had to stay in bed for a long time.",
+        "I had an argument with my best friend, and they said they didn't want to be friends anymore."
+      ]
+    },
+    {
+      "name": "Melancholy",
+      "sprite": "e5",
+      "difficulty": 2,
+      "scenarios": [
+        "I looked at old family photos and felt nostalgic about the past.",
+        "I visited a place I used to go with my grandparents, and they're not here anymore.",
+        "I watched a sad movie and couldn't help but shed a few tears.",
+        "I listened to a song that made me feel both happy and a little bit sad at the same time."
+      ]
+    },
+    {
+      "name": "Awe",
+      "sprite": "e12",
+      "difficulty": 2,
+      "scenarios": [
+        "I saw a beautiful rainbow after a rainstorm and couldn't believe my eyes.",
+        "I went to a planetarium and saw the stars and planets up close.",
+        "I visited a science museum with amazing dinosaur skeletons and fossils.",
+        "I watched a magician perform incredible tricks that left me speechless."
+      ]
+    },
+    {
+      "name": "Boredom",
+      "sprite": "e10",
+      "difficulty": 2,
+      "scenarios": [
+        "I had to sit through a long lecture at school on a topic I wasn't interested in.",
+        "I had nothing to do on a rainy day, and all my friends were busy.",
+        "I had to wait for a very long time at the doctor's office with no toys or books.",
+        "I was stuck in the car during a long road trip with no entertainment."
+      ]
+    },
+    {
+      "name": "Enthusiasm",
+      "sprite": "e4",
+      "difficulty": 3,
+      "scenarios": [
+        "I found out I was going to a theme park for the first time.",
+        "I started a new hobby like learning to play a musical instrument.",
+        "I joined a sports team, and we won our first game.",
+        "I got to meet my favorite author, and they signed my book."
+      ]
+    },
+    {
+      "name": "Disgust",
+      "sprite": "e10",
+      "difficulty": 3,
+      "scenarios": [
+        "I accidentally touched something slimy and gross.",
+        "I saw someone pick their nose and thought it was yucky.",
+        "I tasted a food that I didn't like at all and had to spit it out.",
+        "I found a bug in my room, and it gave me the creeps."
+      ]
+    },
+    {
+      "name": "Contentment",
+      "sprite": "e9",
+      "difficulty": 3,
+      "scenarios": [
+        "I spent a cozy evening at home with my favorite stuffed animals.",
+        "I had a picnic in the park with my family on a sunny day.",
+        "I finished reading a really good book, and it made me feel happy.",
+        "I sat by the fireplace with a cup of hot cocoa on a cold winter night."
+      ]
+    },
+    {
+      "name": "Anticipation",
+      "sprite": "e8",
+      "difficulty": 3,
+      "scenarios": [
+        "I couldn't wait for my birthday party and counted down the days.",
+        "I knew there was a surprise waiting for me, and I was dying to find out what it was.",
+        "I was looking forward to a special vacation with my family.",
+        "I had a feeling something amazing was about to happen, and I couldn't sleep from excitement."
+      ]
+    },
+    {
+      "name": "Resentment",
+      "sprite": "e13",
+      "difficulty": 3,
+      "scenarios": [
+        "I felt like my sibling was getting more attention than me, and it made me mad.",
+        "I worked really hard on a school project, but someone else got all the credit.",
+        "I was blamed for something I didn't do, and it made me feel unfairly treated.",
+        "I saw a friend breaking my favorite toy and didn't want to talk to them anymore."
+      ]
+    },
+    {
+      "name": "Loneliness",
+      "sprite": "e11",
+      "difficulty": 4,
+      "scenarios": [
+        "I had to spend the weekend alone because my parents were away.",
+        "All my friends were busy, and I didn't have anyone to play with.",
+        "I moved to a new school, and I didn't know anyone yet.",
+        "I felt like nobody understood how I was feeling, and it made me sad."
+      ]
+    },
+    {
+      "name": "Empathy",
+      "sprite": "e11",
+      "difficulty": 4,
+      "scenarios": [
+        "I comforted a friend who was feeling sad and listened to their problems.",
+        "I saw a classmate being bullied, and I stepped in to help them.",
+        "I visited an animal shelter and felt sad for the animals that didn't have homes.",
+        "I shared my snacks with someone who forgot theirs, so they wouldn't feel hungry."
+      ]
+    },
+    {
+      "name": "Overwhelm",
+      "sprite": "e11",
+      "difficulty": 4,
+      "scenarios": [
+        "I had so much homework to do that I didn't know where to start.",
+        "I had a big school project, a soccer game, and a birthday party all on the same day.",
+        "I had to take care of my younger sibling, clean my room, and do my schoolwork all at once.",
+        "I was in a noisy and crowded place, and it made me feel like I couldn't think straight."
+      ]
+    },
+    {
+      "name": "Confusion",
+      "sprite": "e11",
+      "difficulty": 4,
+      "scenarios": [
+        "I tried to follow the instructions for building a complicated LEGO set but got stuck.",
+        "I read a book with lots of big words and didn't understand what it was about.",
+        "I got lost in a maze and couldn't find my way out.",
+        "I had to solve a tricky math problem that seemed like a puzzle."
+      ]
+    },
+    {
+      "name": "Elation",
+      "sprite": "e11",
+      "difficulty": 4,
+      "scenarios": [
+        "I found out I was going to a water park with all my friends.",
+        "I got the highest score on a video game I had been playing for weeks.",
+        "I won a prize in a drawing and got a brand new bike.",
+        "I performed in a school play, and the audience gave me a standing ovation."
+      ]
+    },
+    {
+      "name": "Shame",
+      "sprite": "e11",
+      "difficulty": 5,
+      "scenarios": [
+        "I got caught stealing cookies from the kitchen, and my parents were disappointed in me.",
+        "I told a lie to cover up a mistake, and it made me feel guilty.",
+        "I accidentally broke something valuable at a friend's house and didn't know how to confess.",
+        "I said something hurtful to a classmate, and I regretted it immediately."
+      ]
+    },
+    {
+      "name": "Adoration",
+      "sprite": "e11",
+      "difficulty": 5,
+      "scenarios": [
+        "I held a cute baby in my arms, and it made me feel warm inside.",
+        "I saw a small kitten playing with a ball of yarn, and it was adorable.",
+        "I watched a video of a baby animal doing funny things, and I couldn't stop smiling.",
+        "I met a new friend who was really kind and friendly, and I admired them a lot."
+      ]
+    },
+    {
+      "name": "Panic",
+      "sprite": "e11",
+      "difficulty": 5,
+      "scenarios": [
+        "I got separated from my parents in a crowded place and didn't know where they were.",
+        "I was in a dark room, and the lights suddenly went out, and I couldn't see anything.",
+        "I heard a loud noise that sounded like thunder, and it scared me a lot.",
+        "I was in a swimming pool and accidentally went too deep, and I started to panic."
+      ]
+    },
+    {
+      "name": "Serenity",
+      "sprite": "e11",
+      "difficulty": 5,
+      "scenarios": [
+        "I lay on the grass and looked up at the blue sky and fluffy clouds.",
+        "I sat by a calm lake, and the water was so still and peaceful.",
+        "I listened to the gentle rustling of leaves in the quiet woods.",
+        "I watched the sun set over the ocean, and it made me feel calm and happy."
+      ]
+    },
+    {
+      "name": "Regret",
+      "sprite": "e11",
+      "difficulty": 5,
+      "scenarios": [
+        "I forgot to do my homework, and the teacher was disappointed in me.",
+        "I said something mean to a friend, and it hurt their feelings.",
+        "I missed a fun event because I didn't sign up in time, and I regretted it.",
+        "I didn't practice for a piano recital, and I made mistakes during the performance."
+      ]
+    },
+    {
+      "name": "Optimism",
+      "sprite": "e11",
+      "difficulty": 6,
+      "scenarios": [
+        "I faced a tough challenge at school and believed I could overcome it with hard work.",
+        "I saw a rainbow after a rainstorm and thought it was a sign of good things to come.",
+        "I made a new friend who was really nice, and it made me hopeful about the future.",
+        "I looked forward to a family vacation and imagined all the fun adventures we'd have."
+      ]
+    },
+    {
+      "name": "Jealousy",
+      "sprite": "e11",
+      "difficulty": 6,
+      "scenarios": [
+        "I felt jealous when my friend got a new toy that I wanted.",
+        "I saw my classmate getting praised by the teacher, and I wished it was me.",
+        "I felt envious of a friend's amazing drawing because I wished I could draw like that.",
+        "I was jealous when my cousin got a bigger slice of cake at a family party."
+      ]
+    },
+    {
+      "name": "Curiosity",
+      "sprite": "e11",
+      "difficulty": 6,
+      "scenarios": [
+        "I saw a strange-looking bug in the garden and wanted to learn more about it.",
+        "I asked my parents a million questions about space after watching a space documentary.",
+        "I found an old map in the attic and couldn't wait to explore the hidden treasure it mentioned.",
+        "I read a book about dinosaurs and wanted to know everything about them."
+      ]
+    },
+    {
+      "name": "Apathy",
+      "sprite": "e11",
+      "difficulty": 6,
+      "scenarios": [
+        "I didn't really care about what game we played at recess and went along with the group.",
+        "I didn't have a strong opinion about what we should have for dinner and just ate whatever was served.",
+        "I watched a movie, but it didn't make me feel excited or sad; it was just okay.",
+        "I didn't mind which book we read for bedtime; they were all fine with me."
+      ]
+    },
+    {
+      "name": "Passion",
+      "sprite": "e11",
+      "difficulty": 6,
+      "scenarios": [
+        "I practiced my soccer skills every day because I loved playing soccer.",
+        "I started a collection of something I was really interested in, like rocks or stamps.",
+        "I fell in love with a book series and couldn't stop reading every book in it.",
+        "I joined a dance class and felt so passionate about dancing that I practiced all the time."
+      ]
+    },
+    {
+      "name": "Indignation",
+      "sprite": "e11",
+      "difficulty": 7,
+      "scenarios": [
+        "I saw someone being treated unfairly, and it made me really angry.",
+        "I learned about a rule at school that I thought was unfair, and I wanted to change it.",
+        "I watched a movie where the bad guy got away with everything, and it frustrated me.",
+        "I heard about a company polluting the environment, and it made me mad at them."
+      ]
+    },
+    {
+      "name": "Contention",
+      "sprite": "e11",
+      "difficulty": 7,
+      "scenarios": [
+        "I had a disagreement with a friend about which game to play, and we argued about it.",
+        "I was part of a debate at school where we had different opinions, and it got intense.",
+        "I saw kids at school arguing about their favorite superheroes, and it turned into a big debate.",
+        "I joined a club, and we had a spirited discussion about what project to work on next."
+      ]
+    },
+    {
+      "name": "Reverence",
+      "sprite": "e11",
+      "difficulty": 7,
+      "scenarios": [
+        "I visited a historic museum and saw artifacts from a long time ago.",
+        "I attended a special ceremony at my place of worship, and it felt sacred.",
+        "I looked up at the night sky full of stars and felt a sense of wonder and respect.",
+        "I listened to a wise person share their life experiences, and I admired their wisdom."
+      ]
+    },
+    {
+      "name": "Wistfulness",
+      "sprite": "e11",
+      "difficulty": 7,
+      "scenarios": [
+        "I saw a picture of my grandparents when they were young and wished I could have met them then.",
+        "I visited my old school and missed the friends I used to play with there.",
+        "I thought about a friend who moved away, and I wished they were still here.",
+        "I listened to a song from my childhood and remembered all the fun times I had."
+      ]
+    },
+    {
+      "name": "Hopelessness",
+      "sprite": "e11",
+      "difficulty": 7,
+      "scenarios": [
+        "I faced a really tough problem at school, and I didn't think I could solve it.",
+        "I saw news about a big problem in the world, and it made me feel like nothing could change.",
+        "I tried to help someone who was very sad, but they seemed to get sadder, and it made me feel helpless.",
+        "I had a bad day, and everything seemed to go wrong, and it felt like there was no way to make it better."
+      ]
+    },
+    {
+      "name": "Inspiration",
+      "sprite": "e11",
+      "difficulty": 8,
+      "scenarios": [
+        "I read a book about a hero who overcame challenges, and it inspired me to be brave.",
+        "I watched a documentary about people making a positive impact on the world, and it motivated me to help others.",
+        "I heard a story about someone who achieved their dreams despite obstacles, and it made me believe in myself.",
+        "I saw an athlete breaking records, and it encouraged me to set my own goals and work hard to achieve them."
+      ]
+    },
+    {
+      "name": "Disdain",
+      "sprite": "e11",
+      "difficulty": 8,
+      "scenarios": [
+        "I saw someone being mean to others and thought it was rude and disrespectful.",
+        "I heard people making fun of someone because of how they looked, and it made me angry.",
+        "I witnessed someone being unfair and unkind to animals, and it disgusted me.",
+        "I met people who judged others based on their background, and I didn't like it at all."
+      ]
+    },
+    {
+      "name": "Mirth",
+      "sprite": "e11",
+      "difficulty": 8,
+      "scenarios": [
+        "I watched a funny cartoon that made me laugh so hard I couldn't stop.",
+        "I played a silly game with my friends that had us all giggling.",
+        "I listened to a joke that was so hilarious it made me laugh until my stomach hurt.",
+        "I saw a comedian perform live, and their jokes had the whole audience in stitches."
+      ]
+    },
+    {
+      "name": "Desperation",
+      "sprite": "e11",
+      "difficulty": 8,
+      "scenarios": [
+        "I got lost in a large and unfamiliar mall, and I couldn't find my parents.",
+        "I faced a big storm while camping, and it felt like there was no way to stay dry.",
+        "I heard a loud noise in the middle of the night, and it scared me a lot.",
+        "I had a really important test the next day, and I hadn't studied at all."
+      ]
+    },
+    {
+      "name": "Tranquility",
+      "sprite": "e11",
+      "difficulty": 8,
+      "scenarios": [
+        "I lay in a hammock, feeling the gentle sway and listening to the birds chirping.",
+        "I sat by a peaceful pond, watching the ripples on the water and feeling completely calm.",
+        "I closed my eyes and took deep breaths, meditating in a quiet and serene garden.",
+        "I watched the sunset over a tranquil forest, and the colors in the sky made me feel at peace."
+      ]
+    },
+    {
+      "name": "Vigor",
+      "sprite": "e11",
+      "difficulty": 9,
+      "scenarios": [
+        "I finished a challenging obstacle course and felt full of energy and strength.",
+        "I ran a race with all my might and crossed the finish line with a burst of vitality.",
+        "I played an exciting game of soccer and scored the winning goal, feeling invigorated.",
+        "I danced to my favorite music for hours, and it left me brimming with enthusiasm."
+      ]
+    },
+    {
+      "name": "Loathing",
+      "sprite": "e11",
+      "difficulty": 9,
+      "scenarios": [
+        "I witnessed an act of cruelty that filled me with intense hatred and disgust.",
+        "I learned about a person who had hurt others intentionally, and it made me loathe their actions.",
+        "I saw someone being unfairly treated and despised the injustice of it all.",
+        "I encountered someone who spread hate and discrimination, and it made me feel deep revulsion."
+      ]
+    },
+    {
+      "name": "Humility",
+      "sprite": "e11",
+      "difficulty": 9,
+      "scenarios": [
+        "I made a mistake and admitted it, feeling humbled by my imperfections.",
+        "I met someone who had achieved great success but remained humble and down-to-earth.",
+        "I volunteered to help those in need, and it reminded me of the importance of humility.",
+        "I listened to a wise elder share their life experiences, and it taught me the value of humility."
+      ]
+    },
+    {
+      "name": "Remorse",
+      "sprite": "e11",
+      "difficulty": 10,
+      "scenarios": [
+        "I hurt a friend's feelings with thoughtless words, and I regretted it deeply.",
+        "I made a decision that had negative consequences for others, and it weighed on my conscience.",
+        "I broke something valuable that belonged to someone else, and I felt a strong sense of remorse.",
+        "I let someone down when they needed me, and I wished I could go back and do things differently."
+      ]
+    },
+    {
+      "name": "Ecstasy",
+      "sprite": "e11",
+      "difficulty": 10,
+      "scenarios": [
+        "I went on a thrilling roller coaster ride and felt an incredible rush of excitement.",
+        "I attended a music concert of my favorite band, and the energy in the crowd was ecstatic.",
+        "I received a surprise gift that I had been dreaming of for a long time, and it filled me with ecstasy.",
+        "I witnessed a breathtaking fireworks display, and the colors and explosions left me in a state of pure ecstasy."
+      ]
+    },
+    {
+      "name": "Ambivalence",
+      "sprite": "e11",
+      "difficulty": 10,
+      "scenarios": [
+        "I couldn't decide which flavor of ice cream to choose because they all sounded equally good.",
+        "I had mixed feelings about a decision and couldn't make up my mind.",
+        "I felt torn between two equally important choices, and it left me in a state of ambivalence.",
+        "I had conflicting emotions about a situation, not knowing whether to be happy or sad, and it made me feel ambivalent."
+      ]
+    }
+  ]
+}
