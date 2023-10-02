@@ -34,7 +34,7 @@ public class ExpressionScript : MonoBehaviour
     {
     
     }
-​
+
     /// <summary>
     /// This function sets a random expression from the folder "sprite" in the given path
     /// </summary>
@@ -44,12 +44,12 @@ public class ExpressionScript : MonoBehaviour
         string[] files = Directory.GetFiles(Path.Combine(path, "sprite"));
         string[] filtered = Array.FindAll(files, files => 
                                             !files.EndsWith("meta"));
-​
+
         for (int iFile = 0; iFile < filtered.Length; iFile++)
         {
             filtered[iFile] = Path.GetFileNameWithoutExtension(filtered[iFile]);
         }
-​
+
         string exp_chosen = filtered[UnityEngine.Random.Range(0, filtered.Length)];
         GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>(exp_chosen);
     }

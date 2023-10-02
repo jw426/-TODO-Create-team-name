@@ -15,22 +15,24 @@ public class EmotionScript : MonoBehaviour
     void Start()
     {
         ScenarioScript sc = scManager.GetComponent<ScenarioScript>();
-        correct = Path.GetFileNameWithoutExtension(ScenarioScript.text);
+        correct = sc.chosenEmotion.name;
         Debug.Log(correct);
 
         int correctBtn = UnityEngine.Random.Range(0, emotionBtns.Length - 1);
         Debug.Log(correctBtn);
 
-        string wrong = Path.Combine(ScenarioScript.curDir, "WrongEmotions.txt");
-        StreamReader reader = new StreamReader(wrong);
-        wrongEmotions = reader.ReadToEnd().Split("\n");
+        // To implement
+        //string wrong = Path.Combine(ScenarioScript.curDir, "WrongEmotions.txt");
+        //StreamReader reader = new StreamReader(wrong);
+        //wrongEmotions = reader.ReadToEnd().Split("\n");
+    
 
         for (int i = 0; i < emotionBtns.Length; i++) {
         Answers asc = emotionBtns[i].GetComponent<Answers>();
             if (i == correctBtn) {
                 asc.assignValue(correct, true);
             } else {
-                string wrongEmotion = wrongEmotions[UnityEngine.Random.Range(0, wrongEmotions.Length - 1)]; 
+                string wrongEmotion = "Sample"; 
                 asc.assignValue(wrongEmotion, false);
             }
         }
