@@ -5,16 +5,12 @@ using UnityEngine;
 public class CharacterScript : MonoBehaviour
 {
     public Sprite[] character_sprites;
-    // Start is called before the first frame update
-    void Start()
+
+    /*
+     * Renders the character based on a randomly chosen sprite
+     */
+    public void Render()
     {
         GetComponent<SpriteRenderer>().sprite = character_sprites[Random.Range(0, character_sprites.Length)];
-    
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

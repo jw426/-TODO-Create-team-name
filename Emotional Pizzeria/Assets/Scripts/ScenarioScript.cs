@@ -95,6 +95,11 @@ public class ScenarioScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+    }
+
+    public Emotion getChosenEmotion()
+    {
         // Read in the emotions.json file, parse it, and find the root element
         emotionList = JsonUtility.FromJson<EmotionList>(emotionsJSON.text);
 
@@ -103,7 +108,7 @@ public class ScenarioScript : MonoBehaviour
 
         Emotion[] filteredEmotionList = emotionList.emotions.Where(e => e.difficulty <= 3).ToArray();
 
-        
+
         // Choose a random emotion, and for that emotion, choose a random scenario
         chosenEmotion = filteredEmotionList[UnityEngine.Random.Range(0, filteredEmotionList.Length)];
         text = chosenEmotion.scenarios[UnityEngine.Random.Range(0, chosenEmotion.scenarios.Length)];
@@ -112,7 +117,10 @@ public class ScenarioScript : MonoBehaviour
         //TextScript sc = TextObject.GetComponent<TextScript>();
         //sc.SetTextByString(scenario);
 
-        ExpressionScript esc = ExpObject.GetComponent<ExpressionScript>();
-        esc.SetExpressionByFile("Sprites/" + chosenEmotion.sprite);
+        //ExpressionScript esc = ExpObject.GetComponent<ExpressionScript>();
+        //esc.SetExpressionByFile("Sprites/" + chosenEmotion.sprite);
+
+        return chosenEmotion;
     }
+
 }
