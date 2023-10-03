@@ -531,7 +531,6 @@ MonoBehaviour:
   customer: {fileID: 7139345063525543588, guid: 66376b0c6aabf413ba8bd3e0eb8291b3, type: 3}
   SpriteCanvas: {fileID: 948364437}
   timer: 1
-  customerLimit: 5
 --- !u!114 &298354573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -545,7 +544,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxCustomers: 5
-  customer: {fileID: 7139345063525543588, guid: 66376b0c6aabf413ba8bd3e0eb8291b3, type: 3}
 --- !u!1 &319393900
 GameObject:
   m_ObjectHideFlags: 0
@@ -3343,10 +3341,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e19ee7e0b9897c8429fdf5e4f30f99bc, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

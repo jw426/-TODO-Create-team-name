@@ -30,16 +30,16 @@ public class TextScript : MonoBehaviour
     void Start() {
 
         //sc = scManager.GetComponent<ScenarioScript>();
-        //if (this.gameObject.name == "ScenarioSummary")
-        //{
-        //    Initialize();
-        //}
+        if (gameObject.name == "ScenarioSummary")
+        {
+            Initialize();
+        }
 
     }
 
     private void Update() {
 
-        if (this.gameObject.name == "ScenarioSummary")
+        if (gameObject.name == "ScenarioSummary")
         {
             return;
         }

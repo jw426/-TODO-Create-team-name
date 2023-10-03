@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System;
 using System.IO;
 using UnityEngine;
+using static ScenarioScript;
 
 /*
 public class ExpressionScript : MonoBehaviour
@@ -32,7 +33,10 @@ public class ExpressionScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-    
+        if (gameObject.name == "ExpressionSummary")
+        {
+            gameObject.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Sprites/" + ScenarioScript.exp);
+        }
     }
 
     /// <summary>

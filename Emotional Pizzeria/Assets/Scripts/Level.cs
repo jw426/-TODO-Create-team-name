@@ -23,20 +23,15 @@ public class Level : MonoBehaviour
     void Update()
     {
 
-        Debug.Log("total score" + totalScore);
-        /* Player has successfully taken all customers' orders */
+        /* Time to go to next level */
         if (totalScore == maxCustomers)
         {
             SceneManager.LoadScene("Level 2");
         }
 
-        Debug.Log("currCustomer" + currCustomer);
-        /* Player has successfully taken current customer's order */
-
+        /* Time to go to next customer */
         customer = GetComponent<Spawner>().GetCurrentCustomer();
         quizManager = customer.transform.GetChild(4);
-        Debug.Log("quiz score" + quizManager.GetComponent<QuizManager>().GetScore());
-
         if (quizManager.GetComponent<QuizManager>().GetScore() == 1)
         {
             currCustomer++;

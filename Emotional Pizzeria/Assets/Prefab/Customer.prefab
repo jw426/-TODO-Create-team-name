@@ -2392,8 +2392,8 @@ MonoBehaviour:
   tmp: {fileID: 5984580151356400915}
   delayBeforeStart: 0
   timeBtwChars: 0.1
-  prompt: {fileID: 3542739117096254361}
-  customer: {fileID: 7139345063525543588}
+  prompt: {fileID: 0}
+  customer: {fileID: 0}
   takeOrder: {fileID: 2474932688454276376}
   scManager: {fileID: 627033477856805263}
   textFinished: 0
