@@ -6,16 +6,16 @@ using UnityEngine.SceneManagement;
 public class Level : MonoBehaviour
 {
     [SerializeField] int maxCustomers;
+    [SerializeField] GameObject endLevel;
     int totalScore = 0;
-    int currCustomer = 0;
     Transform quizManager;
     GameObject customer;
 
     // Start is called before the first frame update
     void Start()
     {
+        endLevel.SetActive(false);
         GetComponent<Spawner>().HasNextCustomer();
-        currCustomer++;
     }
 
 
@@ -26,7 +26,7 @@ public class Level : MonoBehaviour
         /* Time to go to next level */
         if (totalScore == maxCustomers)
         {
-            SceneManager.LoadScene("Level 2");
+            endLevel.SetActive(true);
         }
 
         /* Time to go to next customer */
@@ -34,12 +34,20 @@ public class Level : MonoBehaviour
         quizManager = customer.transform.GetChild(4);
         if (quizManager.GetComponent<QuizManager>().GetScore() == 1)
         {
-            currCustomer++;
             totalScore++;
             GetComponent<Spawner>().HasNextCustomer();
         }
 
-        
+
     }
 
+    public void Retry()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void NextLevel()
+    {
+        SceneManager.LoadScene("Level 2");
+    }
 }
