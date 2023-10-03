@@ -2035,9 +2035,7 @@ MonoBehaviour:
   currentQuestion: 0
   QuestionTxt: {fileID: 1169686121120728955}
   QuizPanel: {fileID: 7613670089802803798}
-  GoPanel: {fileID: 0}
   ScoreTxt: {fileID: 0}
-  score: 0
 --- !u!1 &6285755651011942166
 GameObject:
   m_ObjectHideFlags: 0

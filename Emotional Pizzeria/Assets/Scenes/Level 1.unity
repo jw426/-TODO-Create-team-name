@@ -544,8 +544,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dff029ca039354d7ab9dfa54adf8100d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCustomers: 0
-  customer: {fileID: 0}
+  maxCustomers: 5
+  customer: {fileID: 7139345063525543588, guid: 66376b0c6aabf413ba8bd3e0eb8291b3, type: 3}
 --- !u!1 &319393900
 GameObject:
   m_ObjectHideFlags: 0

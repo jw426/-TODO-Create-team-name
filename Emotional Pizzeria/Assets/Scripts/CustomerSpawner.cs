@@ -7,22 +7,24 @@ public class Spawner : MonoBehaviour
     [SerializeField] GameObject customer;
     [SerializeField] Transform SpriteCanvas;
     [SerializeField] float timer;
-    [SerializeField] int customerLimit;
 
-    int numCustomer = 0;
     bool hasNextCustomer = false;
 
+    Transform character;
     GameObject currCustomer;
     GameObject body;
     GameObject expression;
     GameObject scenario;
     GameObject speechBubble;
+    GameObject speechBubbleText;
+
 
     IEnumerator CustomerCoroutine()
     {
         /* Gets children of Customer Game Object */
-        body = currCustomer.transform.GetChild(0).GetChild(0).gameObject;
-        expression = currCustomer.transform.GetChild(0).GetChild(1).gameObject;
+        character = currCustomer.transform.GetChild(0);
+        body = character.GetChild(0).gameObject;
+        expression = character.GetChild(1).gameObject;
         speechBubble = currCustomer.transform.GetChild(1).gameObject;
         scenario = currCustomer.transform.GetChild(3).gameObject;
 
@@ -33,8 +35,13 @@ public class Spawner : MonoBehaviour
         expression.GetComponent<ExpressionScript>().SetExpressionByFile("Sprites/" + emotion.sprite);
 
         /* Renders Speech Bubble after some time */
-        yield return new WaitForSecondsRealtime((float)(timer + 0.5));
+        yield return new WaitForSecondsRealtime((float)(timer + 0.25));
         speechBubble.SetActive(true);
+
+        /* Time to say Hello */
+
+        //speechBubbleText = speechBubble.transform.GetChild(0).gameObject;
+        //speechBubbleText.GetComponent<TextScript>().InitializeByString("Hello.");
 
     }
 
@@ -43,13 +50,13 @@ public class Spawner : MonoBehaviour
         hasNextCustomer = true;
     }
 
+    public GameObject GetCurrentCustomer()
+    {
+        return currCustomer;
+    }
+
     void Update()
     {
-
-        if (numCustomer == customerLimit)
-        {
-            hasNextCustomer = false;
-        }
 
         /* Creates next customer */
         if (hasNextCustomer)
@@ -58,16 +65,16 @@ public class Spawner : MonoBehaviour
             {
                 Destroy(currCustomer);
             }
+
             currCustomer = Instantiate(customer, SpriteCanvas, false);
             StartCoroutine(CustomerCoroutine());
             hasNextCustomer = false;
-            numCustomer++;
         }
         
 
-        //if Hello is done
+        /* Time to Talk */
 
-        //if scenario is done
+        /* Time to say Goodbye */
 
     }
 
