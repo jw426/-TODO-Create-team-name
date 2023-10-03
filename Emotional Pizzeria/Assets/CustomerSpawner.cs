@@ -5,8 +5,7 @@ public class Spawner : MonoBehaviour
 {
     
     [SerializeField] GameObject customer;
-    [SerializeField] GameObject scenario;
-    [SerializeField] GameObject greetings;
+    
     [SerializeField] Transform SpriteCanvas;
     [SerializeField] float timer;
     [SerializeField] int customerLimit;
@@ -17,6 +16,7 @@ public class Spawner : MonoBehaviour
     GameObject currCustomer;
     GameObject body;
     GameObject expression;
+    GameObject scenario;
     GameObject speechBubble;
 
     IEnumerator CustomerCoroutine()
@@ -25,6 +25,7 @@ public class Spawner : MonoBehaviour
         body = currCustomer.transform.GetChild(0).GetChild(0).gameObject;
         expression = currCustomer.transform.GetChild(0).GetChild(1).gameObject;
         speechBubble = currCustomer.transform.GetChild(1).gameObject;
+        scenario = currCustomer.transform.GetChild(3).gameObject;
 
         /* Renders Customer after some time */
         yield return new WaitForSecondsRealtime(timer);
