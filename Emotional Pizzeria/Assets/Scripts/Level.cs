@@ -5,9 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class Level : MonoBehaviour
 {
-    [SerializeField] int numCustomers;
+    [SerializeField] int maxCustomers;
     [SerializeField] GameObject customer;
-    bool nextLevel = false;
+    int score = 0;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -18,11 +19,16 @@ public class Level : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /* Heads to next level */
-        if (nextLevel)
+
+        /* Head to next level */
+        if (score == maxCustomers)
         {
             SceneManager.LoadScene("Level 2");
         }
+
+
+        GetComponent<Spawner>().HasNextCustomer();
+
 
         
     }

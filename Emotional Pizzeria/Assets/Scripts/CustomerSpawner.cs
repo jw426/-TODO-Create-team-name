@@ -5,7 +5,6 @@ public class Spawner : MonoBehaviour
 {
     
     [SerializeField] GameObject customer;
-    
     [SerializeField] Transform SpriteCanvas;
     [SerializeField] float timer;
     [SerializeField] int customerLimit;
