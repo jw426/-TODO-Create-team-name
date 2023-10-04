@@ -3,7 +3,7 @@ guid: c46cc0f3198612e4baf12150ac7f8824
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -74,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -86,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -98,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -110,6 +116,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -122,6 +129,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -134,6 +142,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -146,6 +155,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -158,6 +168,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -636,31 +647,30 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Wardrobes and Bookshelfs_17: 1486326298
-      Wardrobes and Bookshelfs_11: -1162863862
-      Wardrobes and Bookshelfs_14: 352714552
-      Wardrobes and Bookshelfs_12: 2069122957
+      Wardrobes and Bookshelfs_0: 1023210402
       Wardrobes and Bookshelfs_1: 1866657623
-      Wardrobes and Bookshelfs_3: -992980113
-      Wardrobes and Bookshelfs_9: -227461576
-      Wardrobes and Bookshelfs_2: -892083714
-      Wardrobes and Bookshelfs_7: -1330185734
-      Wardrobes and Bookshelfs_15: -6704769
-      Wardrobes and Bookshelfs_6: -1121916949
-      Wardrobes and Bookshelfs_18: -377413899
-      Wardrobes and Bookshelfs_20: 842348832
-      Wardrobes and Bookshelfs_13: 1756294398
-      Wardrobes and Bookshelfs_8: 1423595005
       Wardrobes and Bookshelfs_10: 1659112590
+      Wardrobes and Bookshelfs_11: -1162863862
+      Wardrobes and Bookshelfs_12: 2069122957
+      Wardrobes and Bookshelfs_13: 1756294398
+      Wardrobes and Bookshelfs_14: 352714552
+      Wardrobes and Bookshelfs_15: -6704769
+      Wardrobes and Bookshelfs_16: 24001502
+      Wardrobes and Bookshelfs_17: 1486326298
+      Wardrobes and Bookshelfs_18: -377413899
       Wardrobes and Bookshelfs_19: 1331209761
+      Wardrobes and Bookshelfs_2: -892083714
+      Wardrobes and Bookshelfs_20: 842348832
       Wardrobes and Bookshelfs_21: 200869023
+      Wardrobes and Bookshelfs_3: -992980113
       Wardrobes and Bookshelfs_4: 1702579675
       Wardrobes and Bookshelfs_5: -327272221
-      Wardrobes and Bookshelfs_0: 1023210402
-      Wardrobes and Bookshelfs_16: 24001502
-  spritePackingTag: 
+      Wardrobes and Bookshelfs_6: -1121916949
+      Wardrobes and Bookshelfs_7: -1330185734
+      Wardrobes and Bookshelfs_8: 1423595005
+      Wardrobes and Bookshelfs_9: -227461576
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

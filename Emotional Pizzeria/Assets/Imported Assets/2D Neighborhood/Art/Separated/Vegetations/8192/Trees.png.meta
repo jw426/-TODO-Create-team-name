@@ -3,7 +3,7 @@ guid: b2cf27082b7fcf24bbdccfbe3874787e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -74,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -86,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -98,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -110,6 +116,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -122,6 +129,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -134,6 +142,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -146,6 +155,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -158,6 +168,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -783,38 +794,37 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Trees_12: -1061559811
-      Trees_2: 1082346165
-      Trees_21: 98831792
-      Trees_23: 1139277795
-      Trees_1: 131469416
-      Trees_6: -844974581
-      Trees_4: -72728120
-      Trees_15: -1509019679
-      Trees_25: -1800089433
-      Trees_13: 1325384734
-      Trees_8: -1531791580
       Trees_0: -1287810770
-      Trees_3: -1686153858
+      Trees_1: 131469416
+      Trees_10: 1255696793
+      Trees_11: 925192837
+      Trees_12: -1061559811
+      Trees_13: 1325384734
+      Trees_14: 2030647675
+      Trees_15: -1509019679
+      Trees_16: 328878296
+      Trees_17: -585288439
+      Trees_18: -51652886
+      Trees_19: -1962922741
+      Trees_2: 1082346165
+      Trees_20: 1373595727
+      Trees_21: 98831792
+      Trees_22: -81254835
+      Trees_23: 1139277795
+      Trees_24: -1061560173
+      Trees_25: -1800089433
+      Trees_26: 1295782976
       Trees_27: -57041617
       Trees_28: 369383335
-      Trees_16: 328878296
-      Trees_18: -51652886
-      Trees_17: -585288439
+      Trees_3: -1686153858
+      Trees_4: -72728120
       Trees_5: 630510543
+      Trees_6: -844974581
       Trees_7: -1139269890
-      Trees_20: 1373595727
+      Trees_8: -1531791580
       Trees_9: 921807929
-      Trees_11: 925192837
-      Trees_10: 1255696793
-      Trees_19: -1962922741
-      Trees_22: -81254835
-      Trees_24: -1061560173
-      Trees_26: 1295782976
-      Trees_14: 2030647675
-  spritePackingTag: 
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -3,7 +3,7 @@ guid: 395db17cce2160e4b9ccdc7dc08da30b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -74,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -86,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -98,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -110,6 +116,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -122,6 +129,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -134,6 +142,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -146,6 +155,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -158,6 +168,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -531,57 +542,56 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Sofas_6: -1381307814
-      Sofas_4: -1815543328
-      Sofas_15: -180850162
-      Sofas_46: -137813711
-      Sofas_22: 815223240
-      Sofas_19: -357476341
-      Sofas_25: -1996646115
-      Sofas_1: -1962712899
-      Sofas_32: -1997928771
-      Sofas_23: -1259768212
-      Sofas_35: -1931785055
-      Sofas_24: 7122003
-      Sofas_33: -1977904246
-      Sofas_30: 559959995
-      Sofas_47: 1501760145
-      Sofas_11: 2095229424
-      Sofas_21: -1421137347
-      Sofas_37: 1129166095
-      Sofas_8: -242355987
-      Sofas_2: 405249270
-      Sofas_12: 1499941640
-      Sofas_7: 1894062607
-      Sofas_36: 67618947
-      Sofas_3: -1024289576
-      Sofas_41: -1872602713
-      Sofas_10: 498499121
-      Sofas_39: -214119674
-      Sofas_16: 385980776
-      Sofas_44: -1440720054
-      Sofas_34: 1255802142
-      Sofas_13: 350924158
-      Sofas_45: 500970437
-      Sofas_26: 1079728935
       Sofas_0: -1246584718
-      Sofas_29: -201319773
-      Sofas_5: -1227960020
-      Sofas_20: 1606212825
+      Sofas_1: -1962712899
+      Sofas_10: 498499121
+      Sofas_11: 2095229424
+      Sofas_12: 1499941640
+      Sofas_13: 350924158
       Sofas_14: -589205090
-      Sofas_28: 1367005868
-      Sofas_9: -38722163
-      Sofas_38: 1097993613
+      Sofas_15: -180850162
+      Sofas_16: 385980776
       Sofas_17: -1534010909
-      Sofas_27: -1807657583
-      Sofas_43: 1338929914
       Sofas_18: -1046428788
+      Sofas_19: -357476341
+      Sofas_2: 405249270
+      Sofas_20: 1606212825
+      Sofas_21: -1421137347
+      Sofas_22: 815223240
+      Sofas_23: -1259768212
+      Sofas_24: 7122003
+      Sofas_25: -1996646115
+      Sofas_26: 1079728935
+      Sofas_27: -1807657583
+      Sofas_28: 1367005868
+      Sofas_29: -201319773
+      Sofas_3: -1024289576
+      Sofas_30: 559959995
       Sofas_31: -1229274090
+      Sofas_32: -1997928771
+      Sofas_33: -1977904246
+      Sofas_34: 1255802142
+      Sofas_35: -1931785055
+      Sofas_36: 67618947
+      Sofas_37: 1129166095
+      Sofas_38: 1097993613
+      Sofas_39: -214119674
+      Sofas_4: -1815543328
       Sofas_40: -1783479551
+      Sofas_41: -1872602713
       Sofas_42: 1738520632
-  spritePackingTag: 
+      Sofas_43: 1338929914
+      Sofas_44: -1440720054
+      Sofas_45: 500970437
+      Sofas_46: -137813711
+      Sofas_47: 1501760145
+      Sofas_5: -1227960020
+      Sofas_6: -1381307814
+      Sofas_7: 1894062607
+      Sofas_8: -242355987
+      Sofas_9: -38722163
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

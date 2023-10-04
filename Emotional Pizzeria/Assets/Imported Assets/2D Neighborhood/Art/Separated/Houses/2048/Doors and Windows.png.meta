@@ -3,7 +3,7 @@ guid: 9c37f5d65c262094eb5304136302473f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -74,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -86,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -98,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -110,6 +116,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -122,6 +129,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -134,6 +142,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -146,6 +155,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -158,6 +168,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -930,45 +941,44 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Doors and Windows_24: 2031424089
-      Doors and Windows_32: 1639147711
-      Doors and Windows_30: 542130400
-      Doors and Windows_8: -460801821
-      Doors and Windows_20: 1470799558
-      Doors and Windows_35: -1336991412
-      Doors and Windows_2: 678112104
-      Doors and Windows_6: -819818796
-      Doors and Windows_22: -274680777
-      Doors and Windows_5: 1564989452
-      Doors and Windows_16: 2088824973
+      Doors and Windows_0: -462599148
+      Doors and Windows_1: 602547061
+      Doors and Windows_10: 1930383128
       Doors and Windows_11: -121536045
       Doors and Windows_12: -764447487
       Doors and Windows_13: 967789508
-      Doors and Windows_25: -90098350
-      Doors and Windows_27: -875650671
-      Doors and Windows_7: -555687811
-      Doors and Windows_15: -433176165
-      Doors and Windows_18: 793459107
-      Doors and Windows_23: 1535718478
-      Doors and Windows_26: 1792736288
-      Doors and Windows_31: 755076241
-      Doors and Windows_1: 602547061
-      Doors and Windows_0: -462599148
-      Doors and Windows_9: -91728993
-      Doors and Windows_28: 1642428565
       Doors and Windows_14: 14843302
-      Doors and Windows_21: 1400459844
-      Doors and Windows_33: -1364544162
-      Doors and Windows_10: 1930383128
-      Doors and Windows_34: 1856849321
-      Doors and Windows_3: -197461286
-      Doors and Windows_19: -653218194
-      Doors and Windows_4: -1311657824
+      Doors and Windows_15: -433176165
+      Doors and Windows_16: 2088824973
       Doors and Windows_17: 1903258680
+      Doors and Windows_18: 793459107
+      Doors and Windows_19: -653218194
+      Doors and Windows_2: 678112104
+      Doors and Windows_20: 1470799558
+      Doors and Windows_21: 1400459844
+      Doors and Windows_22: -274680777
+      Doors and Windows_23: 1535718478
+      Doors and Windows_24: 2031424089
+      Doors and Windows_25: -90098350
+      Doors and Windows_26: 1792736288
+      Doors and Windows_27: -875650671
+      Doors and Windows_28: 1642428565
       Doors and Windows_29: -324374444
-  spritePackingTag: 
+      Doors and Windows_3: -197461286
+      Doors and Windows_30: 542130400
+      Doors and Windows_31: 755076241
+      Doors and Windows_32: 1639147711
+      Doors and Windows_33: -1364544162
+      Doors and Windows_34: 1856849321
+      Doors and Windows_35: -1336991412
+      Doors and Windows_4: -1311657824
+      Doors and Windows_5: 1564989452
+      Doors and Windows_6: -819818796
+      Doors and Windows_7: -555687811
+      Doors and Windows_8: -460801821
+      Doors and Windows_9: -91728993
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

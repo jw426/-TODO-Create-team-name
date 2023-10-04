@@ -3,7 +3,7 @@ guid: f58cce18b47554a489003b36d7cb0002
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -74,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -86,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -98,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -110,6 +116,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -122,6 +129,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -134,6 +142,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -146,6 +155,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -158,6 +168,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -574,27 +585,26 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Ovens and Washing Machines_0: -535267499
-      Ovens and Washing Machines_14: 521797660
-      Ovens and Washing Machines_4: 1117765958
       Ovens and Washing Machines_1: 194804090
-      Ovens and Washing Machines_18: 202907404
-      Ovens and Washing Machines_7: -1316862953
-      Ovens and Washing Machines_2: 1534305193
       Ovens and Washing Machines_10: 1254793495
-      Ovens and Washing Machines_5: 2081035049
-      Ovens and Washing Machines_12: 546463783
-      Ovens and Washing Machines_16: 1956228485
       Ovens and Washing Machines_11: -159482092
-      Ovens and Washing Machines_17: 1558630321
-      Ovens and Washing Machines_9: -852899329
-      Ovens and Washing Machines_8: 78599417
-      Ovens and Washing Machines_3: -1787091927
+      Ovens and Washing Machines_12: 546463783
       Ovens and Washing Machines_13: -711142804
-      Ovens and Washing Machines_6: 1683174061
+      Ovens and Washing Machines_14: 521797660
       Ovens and Washing Machines_15: -2145683130
-  spritePackingTag: 
+      Ovens and Washing Machines_16: 1956228485
+      Ovens and Washing Machines_17: 1558630321
+      Ovens and Washing Machines_18: 202907404
+      Ovens and Washing Machines_2: 1534305193
+      Ovens and Washing Machines_3: -1787091927
+      Ovens and Washing Machines_4: 1117765958
+      Ovens and Washing Machines_5: 2081035049
+      Ovens and Washing Machines_6: 1683174061
+      Ovens and Washing Machines_7: -1316862953
+      Ovens and Washing Machines_8: 78599417
+      Ovens and Washing Machines_9: -852899329
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

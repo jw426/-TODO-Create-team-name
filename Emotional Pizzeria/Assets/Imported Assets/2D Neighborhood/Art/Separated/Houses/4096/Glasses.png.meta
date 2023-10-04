@@ -3,7 +3,7 @@ guid: ffe08a66abd25514b8be9d43ced4fc99
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -74,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -86,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -98,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -110,6 +116,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -122,6 +129,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -134,6 +142,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -146,6 +155,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -158,6 +168,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -720,35 +731,34 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Glasses_12: 477158807
-      Glasses_5: 206672126
-      Glasses_14: 1842100189
-      Glasses_11: -94374200
-      Glasses_21: -514860465
-      Glasses_10: -1018853869
-      Glasses_15: -338575550
-      Glasses_9: 1890769895
-      Glasses_8: -1279151322
-      Glasses_18: -530446201
-      Glasses_6: -917804947
-      Glasses_20: 289828796
-      Glasses_19: -1338589484
-      Glasses_3: -1249971039
-      Glasses_13: -270305317
-      Glasses_4: 1033425610
-      Glasses_23: 2116522389
-      Glasses_1: -409282088
       Glasses_0: -225978962
-      Glasses_17: 1223645682
-      Glasses_25: 163864137
-      Glasses_22: -288807915
-      Glasses_7: -1396493961
-      Glasses_24: 225171895
-      Glasses_2: -1289945814
+      Glasses_1: -409282088
+      Glasses_10: -1018853869
+      Glasses_11: -94374200
+      Glasses_12: 477158807
+      Glasses_13: -270305317
+      Glasses_14: 1842100189
+      Glasses_15: -338575550
       Glasses_16: -1318390359
-  spritePackingTag: 
+      Glasses_17: 1223645682
+      Glasses_18: -530446201
+      Glasses_19: -1338589484
+      Glasses_2: -1289945814
+      Glasses_20: 289828796
+      Glasses_21: -514860465
+      Glasses_22: -288807915
+      Glasses_23: 2116522389
+      Glasses_24: 225171895
+      Glasses_25: 163864137
+      Glasses_3: -1249971039
+      Glasses_4: 1033425610
+      Glasses_5: 206672126
+      Glasses_6: -917804947
+      Glasses_7: -1396493961
+      Glasses_8: -1279151322
+      Glasses_9: 1890769895
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
