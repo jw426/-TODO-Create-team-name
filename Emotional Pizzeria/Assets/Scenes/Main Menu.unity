@@ -2283,7 +2283,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Emotional Pizzaria
+  m_text: Emotional Pizzeria
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 561eba5b86d9f1049899939541ab90f9, type: 2}
   m_sharedMaterial: {fileID: 4224957919789190564, guid: 561eba5b86d9f1049899939541ab90f9, type: 2}
