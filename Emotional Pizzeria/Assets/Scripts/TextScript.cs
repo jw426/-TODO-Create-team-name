@@ -29,36 +29,42 @@ public class TextScript : MonoBehaviour
 
     void Start() {
 
-        sc = scManager.GetComponent<ScenarioScript>();
-        if (this.gameObject.name == "ScenarioSummary") {
+        //sc = scManager.GetComponent<ScenarioScript>();
+        if (gameObject.name == "ScenarioSummary")
+        {
             Initialize();
-        } else {
-            
         }
+
     }
 
     private void Update() {
 
-        if (this.gameObject.name == "ScenarioSummary") {
+        if (gameObject.name == "ScenarioSummary")
+        {
             return;
         }
 
-        if (ScenarioScript.text != null && !running) {
-            running = true; 
+        if (ScenarioScript.text != null && !running)
+        {
+            running = true;
             InitializeByString(ScenarioScript.text);
         }
 
-        if (textFinished || (textFinished && Input.GetMouseButtonDown(0))) {
+        if (textFinished || (textFinished && Input.GetMouseButtonDown(0)))
+        {
             takeOrder.SetActive(true);
         }
-        
-        if (!textSkipped && Input.GetMouseButtonDown(0)) {
-                Debug.Log("Left mouse was clicked.");
-                textSkipped = true;
-                textFinished = true; 
+
+        if (!textSkipped && Input.GetMouseButtonDown(0))
+        {
+            Debug.Log("Left mouse was clicked.");
+            textSkipped = true;
+            textFinished = true;
         }
-        
+
     }
+
+
 
     public void Initialize() {
 

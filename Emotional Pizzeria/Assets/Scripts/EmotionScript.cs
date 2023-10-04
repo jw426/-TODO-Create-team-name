@@ -1,8 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using System;
-using System.IO;
 
 public class EmotionScript : MonoBehaviour
 {
@@ -18,7 +14,7 @@ public class EmotionScript : MonoBehaviour
         correct = sc.chosenEmotion.name;
         Debug.Log(correct);
 
-        int correctBtn = UnityEngine.Random.Range(0, emotionBtns.Length - 1);
+        int correctBtn = Random.Range(0, emotionBtns.Length - 1);
         Debug.Log(correctBtn);
 
         // To implement

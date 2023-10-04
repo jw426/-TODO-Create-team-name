@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
@@ -7,7 +5,7 @@ public class Answers : MonoBehaviour
 {
     public bool isCorrect = false;
     [SerializeField] private TMP_Text tmp;
-    [SerializeField] private GameObject promptManager; 
+    [SerializeField] private GameObject promptManager;
     public QuizManager quizManager;
 
     /// <summary>
@@ -20,13 +18,12 @@ public class Answers : MonoBehaviour
         tmp.text = option; 
     }
 
-
     public void Answer()
     {
-        if(isCorrect)
+        if (isCorrect)
         {
             Debug.Log("correct Answer");
-            quizManager.correct();
+            quizManager.SetCorrect();
         }
         else
         {

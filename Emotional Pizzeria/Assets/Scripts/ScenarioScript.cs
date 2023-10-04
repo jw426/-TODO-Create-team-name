@@ -67,6 +67,7 @@ public class ScenarioScript : MonoBehaviour
     //[SerializeField] private GameObject TextObject;
     [SerializeField] private GameObject ExpObject;
     [SerializeField] public TextAsset emotionsJSON;
+    public static string exp;
     public static string text;
 
     /// <summary>
@@ -95,6 +96,13 @@ public class ScenarioScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+    }
+
+
+
+    public Emotion getChosenEmotion()
+    {
         // Read in the emotions.json file, parse it, and find the root element
         emotionList = JsonUtility.FromJson<EmotionList>(emotionsJSON.text);
 
@@ -103,16 +111,21 @@ public class ScenarioScript : MonoBehaviour
 
         Emotion[] filteredEmotionList = emotionList.emotions.Where(e => e.difficulty <= 3).ToArray();
 
-        
+
         // Choose a random emotion, and for that emotion, choose a random scenario
+        
         chosenEmotion = filteredEmotionList[UnityEngine.Random.Range(0, filteredEmotionList.Length)];
         text = chosenEmotion.scenarios[UnityEngine.Random.Range(0, chosenEmotion.scenarios.Length)];
+        exp = chosenEmotion.sprite;
 
         // Set the text to have that scenario, and the expression to be the emotion's sprite
         //TextScript sc = TextObject.GetComponent<TextScript>();
         //sc.SetTextByString(scenario);
 
-        ExpressionScript esc = ExpObject.GetComponent<ExpressionScript>();
-        esc.SetExpressionByFile("Sprites/" + chosenEmotion.sprite);
+        //ExpressionScript esc = ExpObject.GetComponent<ExpressionScript>();
+        //esc.SetExpressionByFile("Sprites/" + chosenEmotion.sprite);
+
+        return chosenEmotion;
     }
+
 }
