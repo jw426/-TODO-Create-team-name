@@ -76,6 +76,7 @@ public class ScenarioScript : MonoBehaviour
     [System.Serializable]
     public class Emotion{
         public string name;
+        public string[] incorrect;
         public string sprite;
         public int difficulty;
         public string[] scenarios;
@@ -98,8 +99,6 @@ public class ScenarioScript : MonoBehaviour
     {
 
     }
-
-
 
     public Emotion getChosenEmotion()
     {

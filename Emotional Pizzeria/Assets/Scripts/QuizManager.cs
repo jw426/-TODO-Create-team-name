@@ -11,6 +11,10 @@ public class QuizManager : MonoBehaviour
     public GameObject[] options;
     public int currentQuestion;
     public TMP_Text QuestionTxt;
+    public AudioSource wrongAnswer;
+    public AudioSource correctAnswer;
+    [SerializeField] GameObject submitBtn; 
+    [SerializeField] GameObject[] choices; 
 
     public GameObject QuizPanel;
     //public GameObject GoPanel;
@@ -56,20 +60,41 @@ public class QuizManager : MonoBehaviour
         QuizPanel.SetActive(false);
     }
 
+    public void SubmitOrder()
+    {
+        score = 1;
+        QuizPanel.SetActive(false);
+    }
+
     /// <summary>
     /// removes quetsion once answered and generates new question
     /// </summary>
     public void correct()
     {
+        // sound effect
+        correctAnswer.Play();
+        submitBtn.SetActive(true);
+
+        for (int i = 0; i < choices.Length; i++) 
+        {
+            choices[i].GetComponent<Button>().interactable = false; 
+        }
+        
+        // yield return new WaitForSeconds(2f);
+
         // when correct
-        score = 1;
-        QuizPanel.SetActive(false);
+        // score = 1;
+        // QuizPanel.SetActive(false);
+        
         //QnA.RemoveAt(currentQuestion);
         //generateQuestion();
     }
 
     public void wrong()
     {
+        // sound effect
+        wrongAnswer.Play();
+
         //score = 0;
         // when incorrect
         //QnA.RemoveAt(currentQuestion);

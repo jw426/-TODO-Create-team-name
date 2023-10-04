@@ -5,8 +5,15 @@ public class AudioScript : MonoBehaviour
     [SerializeField] AudioSource doorOpen;
     [SerializeField] AudioSource doorClose;
     [SerializeField] AudioSource footsteps;
+    [SerializeField] AudioSource cashRegister;
+
     [SerializeField] float timer;
     float time = 0f;
+
+    public void SubmitOrder() 
+    {
+        cashRegister.Play();
+    }
 
     private void Start()
     {
