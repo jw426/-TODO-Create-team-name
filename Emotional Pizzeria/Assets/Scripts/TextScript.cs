@@ -10,7 +10,11 @@ public class TextScript : MonoBehaviour
     [SerializeField] private Coroutine coroutine;
 
     [SerializeField] float delayBeforeStart = 0f;
-    [SerializeField] float timeBtwChars = 0.1f;
+
+    // We make this static so that we can just modify it 
+    // between classes that need to set the speech rate.
+    // Could make a getter in future if that's safer 
+    public static float timeBtwChars = 0.1f;
 
     private string txt; 
 
@@ -53,6 +57,7 @@ public class TextScript : MonoBehaviour
         foreach (char c in txt)
         {
             tmp.text += c;
+            Debug.Log(timeBtwChars);
             yield return new WaitForSeconds(timeBtwChars);
         }
     }
