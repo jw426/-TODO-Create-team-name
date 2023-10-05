@@ -3291,6 +3291,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1565059854}
   - component: {fileID: 1565059855}
+  - component: {fileID: 1565059856}
   m_Layer: 0
   m_Name: Click SFX
   m_TagString: sfx
@@ -3409,6 +3410,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1565059856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565059853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07e6cb37cdb4be64c965e66921f0cd7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1634083736
 GameObject:
   m_ObjectHideFlags: 0
@@ -3858,6 +3871,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1928938488}
   - component: {fileID: 1928938487}
+  - component: {fileID: 1928938489}
   m_Layer: 0
   m_Name: BGM
   m_TagString: bgm
@@ -3976,6 +3990,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1190937907}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1928938489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928938486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07e6cb37cdb4be64c965e66921f0cd7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1929224322
 GameObject:
   m_ObjectHideFlags: 0

@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 104798572}
   - component: {fileID: 104798573}
+  - component: {fileID: 104798574}
   m_Layer: 0
   m_Name: Click SFX
   m_TagString: sfx
@@ -255,6 +256,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &104798574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104798571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07e6cb37cdb4be64c965e66921f0cd7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &136617089
 GameObject:
   m_ObjectHideFlags: 0
@@ -701,6 +714,7 @@ GameObject:
   - component: {fileID: 603653264}
   - component: {fileID: 603653263}
   - component: {fileID: 603653265}
+  - component: {fileID: 603653266}
   m_Layer: 0
   m_Name: SFX Volume
   m_TagString: SFXHandler
@@ -888,6 +902,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ccedb8fa26eb824b8a776dec76aacca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &603653266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603653260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07e6cb37cdb4be64c965e66921f0cd7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &739120885
@@ -1427,6 +1453,7 @@ GameObject:
   - component: {fileID: 1604380288}
   - component: {fileID: 1604380287}
   - component: {fileID: 1604380286}
+  - component: {fileID: 1604380289}
   m_Layer: 0
   m_Name: Speech Text Speed
   m_TagString: Untagged
@@ -1604,6 +1631,18 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1604380289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604380284}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81c5bdac31068284f8839182bdbe66e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1645612188
 GameObject:
   m_ObjectHideFlags: 0
@@ -2068,9 +2107,10 @@ GameObject:
   - component: {fileID: 1876896511}
   - component: {fileID: 1876896510}
   - component: {fileID: 1876896509}
+  - component: {fileID: 1876896512}
   m_Layer: 0
   m_Name: Background Music Volume
-  m_TagString: Untagged
+  m_TagString: bgm
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2257,6 +2297,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 0
+--- !u!114 &1876896512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876896507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ccedb8fa26eb824b8a776dec76aacca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1888839772
 GameObject:
   m_ObjectHideFlags: 0
