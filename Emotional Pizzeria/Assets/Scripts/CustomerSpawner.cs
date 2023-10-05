@@ -32,6 +32,7 @@ public class Spawner : MonoBehaviour
         yield return new WaitForSecondsRealtime(timer);
         body.GetComponent<CharacterScript>().Render();
         ScenarioScript.Emotion emotion = scenario.GetComponent<ScenarioScript>().getChosenEmotion();
+        Debug.Log("emotion " + emotion);
         expression.GetComponent<ExpressionScript>().SetExpressionByFile("Sprites/" + emotion.sprite);
 
         /* Renders Speech Bubble after some time */
@@ -78,7 +79,19 @@ public class Spawner : MonoBehaviour
 
     }
 
+    public void RemoveCurrCustomer()
+    {
 
+        if (currCustomer != null)
+        {
+            Debug.Log("not null customer");
+            Destroy(currCustomer);
+        } else
+        {
+            Debug.Log("null customer");
+        }
+        
+    }
 
 
 }
