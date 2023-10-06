@@ -530,7 +530,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customer: {fileID: 7139345063525543588, guid: 66376b0c6aabf413ba8bd3e0eb8291b3, type: 3}
   SpriteCanvas: {fileID: 948364437}
-  timer: 1
+  timer: 3
 --- !u!114 &298354573
 MonoBehaviour:
   m_ObjectHideFlags: 0
