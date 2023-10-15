@@ -53,6 +53,13 @@ public class Spawner : MonoBehaviour
         hasNextCustomer = true;
     }
 
+    public void HasNoCustomer()
+    {
+        hasNextCustomer = false;
+        customerIn.Stop();
+        customerOut.Stop();
+    }
+
     public GameObject GetCurrentCustomer()
     {
         return currCustomer;
@@ -66,6 +73,7 @@ public class Spawner : MonoBehaviour
         {
             if (currCustomer != null)
             {
+
                 Destroy(currCustomer);
                 customerOut.Play();
             }
@@ -80,6 +88,11 @@ public class Spawner : MonoBehaviour
 
         /* Time to say Goodbye */
 
+    }
+
+    public bool customerOutStopped()
+    {
+        return !customerOut.isPlaying;
     }
 
     public void RemoveCurrCustomer()
