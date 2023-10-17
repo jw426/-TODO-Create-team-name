@@ -40,7 +40,7 @@
       "name": "Fear",
       "sprite": "e1",
       "difficulty": 1,
-      "incorrect" : ["Joy", "Anger", "Fear", "Relief", "Enthusiasm", "Awe", "Boredom", "Confusion"],
+      "incorrect" : ["Joy", "Anger", "Relief", "Enthusiasm", "Awe", "Boredom"],
       "scenarios": [
         "I heard a strange noise at night when I was alone in my room.",
         "I watched a scary movie, and it gave me nightmares.",
@@ -196,7 +196,7 @@
       "name": "Empathy",
       "sprite": "e11",
       "difficulty": 6,
-      "incorrect" : ["Euphoria, "Anticipation", "Empathy", "Overwhelmed", "Elation", "Shame", "Adoration", "Regret", "Jealousy", "Curiosity", "Passion", "Wistfulness", "Inspiration", "Desperation", "Ecstasy", "Serenity"],
+      "incorrect" : ["Euphoria", "Anticipation", "Overwhelmed", "Elation", "Shame", "Adoration", "Regret", "Jealousy", "Curiosity", "Passion", "Wistfulness", "Inspiration", "Desperation", "Ecstasy", "Serenity"],
       "scenarios": [
         "I comforted a friend who was feeling sad and listened to their problems.",
         "I saw a classmate being bullied, and I stepped in to help them.",
@@ -208,7 +208,7 @@
       "name": "Overwhelmed",
       "sprite": "e11",
       "difficulty": 5,
-      "incorrect" : ["Empathy", "Overwhelmed", "Shame", "Adoration", "Jealousy", "Curiosity", "Wistfulness", "Inspiration", "Loathing", "Ecstasy", "Serenity"],
+      "incorrect" : ["Empathy", "Shame", "Adoration", "Jealousy", "Curiosity", "Wistfulness", "Inspiration", "Loathing", "Ecstasy", "Serenity"],
       "scenarios": [
         "I had so much homework to do that I didn't know where to start.",
         "I had a big school project, a soccer game, and a birthday party all on the same day.",
@@ -220,7 +220,7 @@
       "name": "Confusion",
       "sprite": "e11",
       "difficulty": 3,
-      "incorrect": ["Joy", "Relief", "Enthusiasm", "Awe", "Disgust"]
+      "incorrect": ["Joy", "Relief", "Enthusiasm", "Awe", "Disgust"],
       "scenarios": [
         "I tried to follow the instructions for building a complicated LEGO set but got stuck.",
         "I read a book with lots of big words and didn't understand what it was about.",
@@ -268,7 +268,7 @@
       "name": "Panic",
       "sprite": "e11",
       "difficulty": 3,
-      "incorrect" ["Joy", "Anger", "Relief", "Enthusiasm", "Awe", "Boredom", "Disgust"]
+      "incorrect": ["Joy", "Anger", "Relief", "Enthusiasm", "Awe", "Boredom", "Disgust"],
       "scenarios": [
         "I got separated from my parents in a crowded place and didn't know where they were.",
         "I was in a dark room, and the lights suddenly went out, and I couldn't see anything.",
@@ -508,7 +508,7 @@
       "name": "Humility",
       "sprite": "e11",
       "difficulty": 8,
-      "incorrect": ["Mirth" "Tranquility", "Vigor", "Ambivalence"],
+      "incorrect": ["Mirth", "Tranquility", "Vigor", "Ambivalence"],
       "scenarios": [
         "I made a mistake and admitted it, feeling humbled by my imperfections.",
         "I met someone who had achieved great success but remained humble and down-to-earth.",
