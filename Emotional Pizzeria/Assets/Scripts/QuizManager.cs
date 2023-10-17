@@ -17,11 +17,11 @@ public class QuizManager : MonoBehaviour
     [SerializeField] GameObject[] choices; 
 
     public GameObject QuizPanel;
-    public GameObject GoPanel;
+    //public GameObject GoPanel;
 
     public TMP_Text ScoreTxt;
     int totalQuestions = 0;
-    public int score;
+    int score = 0;
 
 /// <summary>
 /// loads question
@@ -29,28 +29,37 @@ public class QuizManager : MonoBehaviour
     private void Start() 
     {   
         totalQuestions = QnA.Count;
-        GoPanel.SetActive(false);
-        generateQuestion();
+        //GoPanel.SetActive(false);
+        //generateQuestion();
     }
 
-    public void retry()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
+    //public void retry()
+    //{
+    //    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    //}
+    
+    //public void nextLevel()
+    //{
+    //    SceneManager.LoadScene("Level 2");
+    
+    //}
 
-<<<<<<< HEAD
-    void GameOver()
+    //void GameOver()
+    //{
+    //    QuizPanel.SetActive(false);
+    //    //GoPanel.SetActive(true);
+
+    //    ScoreTxt.text = "Score: " + score + "/" + totalQuestions + "\n Hearts earned: ???";
+    //}
+
+
+
+    public void SetCorrect()
     {
+        score = 1;
         QuizPanel.SetActive(false);
-        GoPanel.SetActive(true);
-
-        ScoreTxt.text = "Score: " + score + "/" + totalQuestions + "\n Hearts earned: ???";
     }
 
-/// <summary>
-/// removes quetsion once answered and generates new question
-/// </summary>
-=======
     public void SubmitOrder()
     {
         score = 1;
@@ -60,7 +69,6 @@ public class QuizManager : MonoBehaviour
     /// <summary>
     /// removes quetsion once answered and generates new question
     /// </summary>
->>>>>>> fixed_typing
     public void correct()
     {
         // sound effect
@@ -75,65 +83,61 @@ public class QuizManager : MonoBehaviour
         // yield return new WaitForSeconds(2f);
 
         // when correct
-<<<<<<< HEAD
-        score += 1;
-        QnA.RemoveAt(currentQuestion);
-        generateQuestion();
-=======
         // score = 1;
         // QuizPanel.SetActive(false);
         
         //QnA.RemoveAt(currentQuestion);
         //generateQuestion();
->>>>>>> fixed_typing
     }
 
     public void wrong()
     {
-<<<<<<< HEAD
-=======
         // sound effect
         wrongAnswer.Play();
 
         //score = 0;
->>>>>>> fixed_typing
         // when incorrect
-        QnA.RemoveAt(currentQuestion);
-        generateQuestion();
+        //QnA.RemoveAt(currentQuestion);
+        //generateQuestion();
     }
 
-/// <summary>
-/// reads input from inspector, and sets the answer as True
-/// </summary>
-    void setAnswers()
+    public int GetScore()
     {
-        for (int i = 0; i < options.Length; i++)
-        {
-            options[i].GetComponent<Answers>().isCorrect = false;
-            options[i].transform.GetChild(0).GetComponent<TMP_Text>().text = QnA[currentQuestion].Answers[i];
-
-            if(QnA[currentQuestion].CorrectAnswer == i+1)
-            {
-                options[i].GetComponent<Answers>().isCorrect = true;
-            }
-        }
+        return score;
     }
 
-/// <summary>
-/// load new question, unless out of questions
-/// </summary>
-    void generateQuestion()
-    {
-        if(QnA.Count > 0)
-        {
-            currentQuestion = Random.Range(0, QnA.Count);
-            QuestionTxt.text = QnA[currentQuestion].Question;
-            setAnswers();
-        }
-        else
-        {
-            Debug.Log("Out of Questions");
-            GameOver();
-        }
-    }
+    /// <summary>
+    /// reads input from inspector, and sets the answer as True
+    /// </summary>
+    //void setAnswers()
+    //{
+    //    for (int i = 0; i < options.Length; i++)
+    //    {
+    //        options[i].GetComponent<Answers>().isCorrect = false;
+    //        options[i].transform.GetChild(0).GetComponent<TMP_Text>().text = QnA[currentQuestion].Answers[i];
+
+    //        if(QnA[currentQuestion].CorrectAnswer == i+1)
+    //        {
+    //            options[i].GetComponent<Answers>().isCorrect = true;
+    //        }
+    //    }
+    //}
+
+    /// <summary>
+    /// load new question, unless out of questions
+    /// </summary>
+    //void generateQuestion()
+    //{
+    //    if(QnA.Count > 0)
+    //    {
+    //        currentQuestion = Random.Range(0, QnA.Count);
+    //        QuestionTxt.text = QnA[currentQuestion].Question;
+    //        setAnswers();
+    //    }
+    //    else
+    //    {
+    //        Debug.Log("Out of Questions");
+    //        //GameOver();
+    //    }
+    //}
 }

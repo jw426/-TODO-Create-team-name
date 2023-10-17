@@ -1,18 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-<<<<<<< HEAD
-=======
 using TMPro;
 using UnityEngine.UI;
 using System.Collections;
->>>>>>> fixed_typing
 
 public class Answers : MonoBehaviour
 {
     public bool isCorrect = false;
-<<<<<<< HEAD
-=======
     [SerializeField] private TMP_Text tmp;
     [SerializeField] private GameObject promptManager;
     [SerializeField] private GameObject pizzaSprite;
@@ -33,14 +26,11 @@ public class Answers : MonoBehaviour
     [Range(0f, 0.1f)]
     public float _delayBetweenShakes = 0f;
 
->>>>>>> fixed_typing
     public QuizManager quizManager;
 
     /// <summary>
     /// reads isCorrect and generates new question through correct()
     /// </summary>
-<<<<<<< HEAD
-=======
 
     // set details for shaking movement 
     private void Awake()
@@ -63,10 +53,9 @@ public class Answers : MonoBehaviour
         tmp.text = option; 
     }
 
->>>>>>> fixed_typing
     public void Answer()
     {
-        if(isCorrect)
+        if (isCorrect)
         {
             Debug.Log("correct Answer");
             quizManager.correct();

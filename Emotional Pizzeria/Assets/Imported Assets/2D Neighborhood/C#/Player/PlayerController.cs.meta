@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Emotional Pizzeria/Assets/Imported Assets/2D Neighborhood/C#/Player/PlayerController.cs.meta
 guid: 9cd72c29c23a8574c9fd3704572f6feb
+========
+guid: 48bba52ccd75254409d60d9e56c52a6e
+>>>>>>>> fixed_typing:Emotional Pizzeria/Assets/Imported Assets/2D Neighborhood/C#/BG/ParallaxEffect.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

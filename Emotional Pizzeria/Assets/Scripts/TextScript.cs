@@ -3,6 +3,8 @@ using System.Collections;
 using System.IO;
 using UnityEngine;
 using TMPro;
+using System.Collections.Generic;
+
 
 public class TextScript : MonoBehaviour
 {
@@ -12,24 +14,21 @@ public class TextScript : MonoBehaviour
     [SerializeField] float delayBeforeStart = 0f;
     [SerializeField] float timeBtwChars = 0.1f;
 
+    [SerializeField] private GameObject prompt;
+    [SerializeField] private GameObject customer; 
+    [SerializeField] private GameObject takeOrder; 
+    [SerializeField] private GameObject scManager;
+    private ScenarioScript sc;  
+
+    private bool textSkipped = false; 
+    public bool textFinished = false; 
+    private static bool updateOn = true; 
     private string txt; 
+    private bool running = false; 
 
-    /// <summary>
-    /// This function chooses a random scenario from the folder "situation" in the given path
-    /// </summary>
-    /// <param name="path"></param>
-    public void SetTextByPath(string path) {
-        Debug.Log(path);
 
-        string[] files = Directory.GetFiles(Path.Combine(path, "situation"));
-        string[] filtered = Array.FindAll(files, files => 
-                                            !files.EndsWith("meta"));
+    void Start() {
 
-<<<<<<< HEAD
-        string sit_chosen = filtered[UnityEngine.Random.Range(0, filtered.Length)];
-        StreamReader reader = new StreamReader(sit_chosen);
-        string situation = reader.ReadToEnd();
-=======
         //sc = scManager.GetComponent<ScenarioScript>();
         if (gameObject.name == "ScenarioSummary")
         {
@@ -88,25 +87,14 @@ public class TextScript : MonoBehaviour
         
         //Debug.Log(path);
         StreamReader reader = new StreamReader(path);
->>>>>>> fixed_typing
 
         //tmp.text = situation;
         tmp.text = "";
-        txt = situation;
+        txt = reader.ReadToEnd();
         StartCoroutine("TypeWriterTMP");
         //TypeWriterTMP(situation);
     }
 
-<<<<<<< HEAD
-    /// <summary>
-    /// This function sets the text to the given string
-    /// </summary>
-    /// <param name="text"></param>
-    public void SetTextByString(string text) {
-        tmp.text = "";
-        txt = text;
-        StartCoroutine("TypeWriterTMP");
-=======
     public void InitializeByString(string scenario)
     {
 
@@ -120,7 +108,6 @@ public class TextScript : MonoBehaviour
         Debug.Log("txt " + txt);
         StartCoroutine("TypeWriterTMP");       
         //TypeWriterTMP(situation);
->>>>>>> fixed_typing
     }
 
     IEnumerator TypeWriterTMP()
@@ -129,21 +116,17 @@ public class TextScript : MonoBehaviour
 
         foreach (char c in txt)
         {
-<<<<<<< HEAD
-=======
             if (textSkipped) {
                 tmp.text = txt; 
                 break; 
             }
 
->>>>>>> fixed_typing
             tmp.text += c;
             yield return new WaitForSecondsRealtime(timeBtwChars);
         }
+
+        textFinished = true; 
     }
-<<<<<<< HEAD
-}
-=======
 
 
 }
@@ -202,4 +185,3 @@ public class TextScript : MonoBehaviour
 //        }
 //    }
 //}
->>>>>>> fixed_typing
