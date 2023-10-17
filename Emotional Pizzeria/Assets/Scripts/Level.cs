@@ -1,21 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Level : MonoBehaviour
 {
+    [SerializeField] int maxCustomers;
+    [SerializeField] GameObject endLevel;
+    int totalScore = 0;
+    Transform quizManager;
+    GameObject customer;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        endLevel.SetActive(false);
+        GetComponent<Spawner>().HasNextCustomer();
     }
+
 
     // Update is called once per frame
     void Update()
     {
-<<<<<<< HEAD
-        
-=======
 
         /* Time to go to next level */
         if (totalScore == maxCustomers)
@@ -48,6 +54,5 @@ public class Level : MonoBehaviour
     public void NextLevel()
     {
         SceneManager.LoadScene("Level 2");
->>>>>>> fixed_typing
     }
 }

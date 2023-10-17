@@ -3,14 +3,40 @@ using System.Collections.Generic;
 using System;
 using System.IO;
 using UnityEngine;
+using static ScenarioScript;
 
+/*
 public class ExpressionScript : MonoBehaviour
 {
     
     // Start is called before the first frame update
     void Start()
     {
+        if (this.gameObject.name == "ExpressionSummary") {
+            Initialize();
+        }
+    }
+
+    public void Initialize() {
+        this.gameObject.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>(ScenarioScript.exp);
+    }
+
+    public void Initialize(string sp_filename) {
+        this.gameObject.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>(sp_filename);
+    }
+
+}
+*/
+public class ExpressionScript : MonoBehaviour
+{
     
+    // Start is called before the first frame update
+    void Start()
+    {
+        if (gameObject.name == "ExpressionSummary")
+        {
+            gameObject.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Sprites/" + ScenarioScript.exp);
+        }
     }
 
     /// <summary>
@@ -41,3 +67,5 @@ public class ExpressionScript : MonoBehaviour
         GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>(path);
     }
 }
+
+

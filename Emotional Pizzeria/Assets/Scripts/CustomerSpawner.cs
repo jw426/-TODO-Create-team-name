@@ -43,6 +43,7 @@ public class Spawner : MonoBehaviour
         //speechBubbleText.GetComponent<TextScript>().InitializeByString("Hello.");
         speechBubble.SetActive(true);
         ScenarioScript.Emotion emotion = scenario.GetComponent<ScenarioScript>().getChosenEmotion();
+        Debug.Log("emotion " + emotion);
         expression.GetComponent<ExpressionScript>().SetExpressionByFile("Sprites/" + emotion.sprite);
 
     }
@@ -89,7 +90,6 @@ public class Spawner : MonoBehaviour
 
     }
 
-<<<<<<< HEAD
     public bool customerOutStopped()
     {
         return !customerOut.isPlaying;
@@ -109,9 +109,6 @@ public class Spawner : MonoBehaviour
         }
         
     }
-=======
-
->>>>>>> parent of fcddcfb (fixed typing)
 
 
 }
