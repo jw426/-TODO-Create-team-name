@@ -15,6 +15,10 @@ public class QuizManager : MonoBehaviour
     public AudioSource correctAnswer;
     [SerializeField] GameObject submitBtn; 
     [SerializeField] GameObject[] choices; 
+    [SerializeField] private GameObject scoreManager; 
+    [SerializeField] private GameObject scManager;
+    [SerializeField] private GameObject[] qualityIcon;
+
 
     public GameObject QuizPanel;
     //public GameObject GoPanel;
@@ -22,6 +26,7 @@ public class QuizManager : MonoBehaviour
     public TMP_Text ScoreTxt;
     int totalQuestions = 0;
     int score = 0;
+    int wrongCount = 0;
 
 /// <summary>
 /// loads question
@@ -29,6 +34,9 @@ public class QuizManager : MonoBehaviour
     private void Start() 
     {   
         totalQuestions = QnA.Count;
+        GameObject[] sms = GameObject.FindGameObjectsWithTag("scoreManager");
+        if (sms.Length > 0) scoreManager = sms[0];
+        else Debug.Log("score manager not correctly assigned");
         //GoPanel.SetActive(false);
         //generateQuestion();
     }
@@ -53,16 +61,17 @@ public class QuizManager : MonoBehaviour
     //}
 
 
-
-    public void SetCorrect()
-    {
-        score = 1;
-        QuizPanel.SetActive(false);
-    }
-
     public void SubmitOrder()
     {
+        /*
+        GameObject summary = GameObject.FindGameObjectsWithTag("summary")[0];
+        ScenarioScript scc = scManager.GetComponent<ScenarioScript>();
+        summary.GetComponent<SummaryScript>().assignValue(ScenarioScript.exp, scc.chosenEmotion.name);
+        */
         score = 1;
+        
+        ScoreScript sc = scoreManager.GetComponent<ScoreScript>();
+        sc.IncrementScoreBy(20 - 5*wrongCount);
         QuizPanel.SetActive(false);
     }
 
@@ -94,6 +103,10 @@ public class QuizManager : MonoBehaviour
     {
         // sound effect
         wrongAnswer.Play();
+        if (wrongCount < 3) {
+            GameObject heartSprite = qualityIcon[wrongCount++];
+            heartSprite.GetComponent<Image>().color = new Color(0,0,0,174);
+        }
 
         //score = 0;
         // when incorrect
