@@ -4,7 +4,7 @@
       "name": "Joy",
       "sprite": "e11",
       "difficulty": 1,
-      "incorrect" : ["Anger", "Sadness", "Melancholy", "Depressed", "Disgust", "Tired", "Boredom"],
+      "incorrect" : ["Sadness", "Anger", "Fear", "Loneliness", "Awe", "Boredom", "Confusion", "Disgust", "Panic", "Despair"],
       "scenarios": [
         "I received a surprise gift on my birthday.",
         "I won a game I really enjoy playing with my friends.",
@@ -16,7 +16,7 @@
       "name": "Sadness",
       "sprite": "e5",
       "difficulty": 1,
-       "incorrect" : ["Joy", "Amazed", "Happy", "Peaceful", "Relief", "Enthusiasm", "Awe"],
+       "incorrect" : ["Joy", "Anger", "Fear", "Relief", "Enthusiasm", "Awe", "Boredom", "Disgust"],
       "scenarios": [
         "I lost my favorite toy and couldn't find it anywhere.",
         "My best friend moved to a different city, and I miss them a lot.",
@@ -28,7 +28,7 @@
       "name": "Anger",
       "sprite": "e3",
       "difficulty": 1,
-      "incorrect" : ["Joy", "Amazed", "Happy", "Peaceful", "Relief", "Enthusiasm", "Awe"],
+      "incorrect" : ["Joy", "Relief", "Loneliness", "Enthusiasm", "Awe", "Boredom", "Confusion", "Despair"],
       "scenarios": [
         "Someone took my favorite snack without asking, and I got really mad.",
         "I had an argument with my sibling, and we both yelled at each other.",
@@ -40,7 +40,7 @@
       "name": "Fear",
       "sprite": "e1",
       "difficulty": 1,
-      "incorrect" : ["Joy", "Amazed", "Happy", "Peaceful", "Relief", "Enthusiasm", "Anger", "Awe"],
+      "incorrect" : ["Joy", "Anger", "Fear", "Relief", "Enthusiasm", "Awe", "Boredom", "Confusion"],
       "scenarios": [
         "I heard a strange noise at night when I was alone in my room.",
         "I watched a scary movie, and it gave me nightmares.",
@@ -51,8 +51,8 @@
     {
       "name": "Relief",
       "sprite": "e9",
-      "difficulty": 1,
-      "incorrect" : ["Anger", "Sadness", "Melancholy", "Depressed", "Disgust", "Boredom", "Awe"],
+      "difficulty": 2,
+      "incorrect" : ["Sadness", "Anger", "Fear", "Loneliness", "Awe", "Boredom", "Confusion", "Disgust", "Panic", "Despair"],
       "scenarios": [
         "I thought I lost my favorite book but found it under my bed.",
         "I was worried I'd miss my school bus, but I made it just in time.",
@@ -63,8 +63,8 @@
     {
       "name": "Euphoria",
       "sprite": "e11",
-      "difficulty": 2,
-      "incorrect" : ["Anger", "Sadness", "Depressed", "Disgusted", "Tired", "Boredom", "Despair", "Resentment"],
+      "difficulty": 5,
+      "incorrect" : ["Melancholy", "Resentment", "Empathy", "Shame", "Regret", "Jealousy", "Wistfulness", "Hopelessness", "Desperation", "Loathing", "Indignation"],
       "scenarios": [
         "I won first place in a school talent show, and everyone clapped for me.",
         "I found out I was going to Disneyland, and I couldn't stop smiling.",
@@ -75,8 +75,8 @@
     {
       "name": "Despair",
       "sprite": "e1",
-      "difficulty": 2,
-      "incorrect" : ["Joy", "Amazed", "Happy", "Peaceful", "Relief", "Enthusiasm", "Anger", "Awe", "Content", "Melancholy", "Boredom"],
+      "difficulty": 3,
+      "incorrect" : ["Joy", "Relief", "Enthusiasm", "Awe", "Disgust"],
       "scenarios": [
         "I lost my school project the night before it was due, and I couldn't redo it.",
         "My pet ran away from home, and I searched for it everywhere.",
@@ -87,8 +87,8 @@
     {
       "name": "Melancholy",
       "sprite": "e5",
-      "difficulty": 2,
-      "incorrect" : ["Anger", "Sadness", "Depressed", "Disgust", "Boredom", "Anticipation", "Resentment", "Awe", "Excited"],
+      "difficulty": 4,
+      "incorrect" : ["Euphoria", "Resentment", "Empathy", "Elation", "Shame", "Optimism", "Jealousy", "Passion", "Inspiration", "Desperation", "Loathing", "Ecstasy", "Serenity", "Indignation"],
       "scenarios": [
         "I looked at old family photos and felt nostalgic about the past.",
         "I visited a place I used to go with my grandparents, and they're not here anymore.",
@@ -99,8 +99,8 @@
     {
       "name": "Awe",
       "sprite": "e12",
-      "difficulty": 2,
-      "incorrect" : ["Anger", "Sadness", "Depressed", "Disgusted", "Tired", "Bored"],
+      "difficulty": 3,
+      "incorrect" : ["Sadness", "Anger", "Fear", "Relief", "Loneliness", "Boredom", "Disgust", "Panic", "Despair"],
       "scenarios": [
         "I saw a beautiful rainbow after a rainstorm and couldn't believe my eyes.",
         "I went to a planetarium and saw the stars and planets up close.",
@@ -111,8 +111,8 @@
     {
       "name": "Boredom",
       "sprite": "e10",
-      "difficulty": 2,
-      "incorrect" : ["Joy", "Amazed", "Happy", "Relief", "Enthusiasm", "Despair", "Awe", "Content", "Melancholy"],
+      "difficulty": 1,
+      "incorrect" : ["Joy", "Relief", "Enthusiasm", "Awe", "Confusion", "Disgust", "Panic"],
       "scenarios": [
         "I had to sit through a long lecture at school on a topic I wasn't interested in.",
         "I had nothing to do on a rainy day, and all my friends were busy.",
@@ -124,7 +124,7 @@
       "name": "Enthusiasm",
       "sprite": "e4",
       "difficulty": 3,
-      "incorrect" : ["Anger", "Sadness", "Melancholy", "Depressed", "Disgust", "Tired", "Boredom", "Anticipation", "Resentment"],
+      "incorrect" : ["Sadness", "Anger", "Fear", "Loneliness", "Boredom", "Confusion", "Disgust", "Panic", "Despair"],
       "scenarios": [
         "I found out I was going to a theme park for the first time.",
         "I started a new hobby like learning to play a musical instrument.",
@@ -136,7 +136,7 @@
       "name": "Disgust",
       "sprite": "e10",
       "difficulty": 3,
-      "incorrect" : ["Joy", "Amazed", "Happy", "Peaceful", "Relief", "Enthusiasm", "Furious", "Awe", "Content", "Melancholy", "Boredom", "Pleasant"],
+      "incorrect" : ["Joy", "Relief", "Loneliness", "Enthusiasm", "Awe", "Boredom", "Despair"],
       "scenarios": [
         "I accidentally touched something slimy and gross.",
         "I saw someone pick their nose and thought it was yucky.",
@@ -147,8 +147,8 @@
     {
       "name": "Contentment",
       "sprite": "e9",
-      "difficulty": 3,
-      "incorrect" : ["Anger", "Sadness", "Melancholy", "Depressed", "Disgust", "Tired", "Boredom", "Anticipation", "Resentment"],
+      "difficulty": 4,
+      "incorrect" : ["Melancholy", "Anticipation", "Resentment", "Empathy", "Overwhelmed", "Shame", "Adoration", "Regret", "Jealousy", "Curiosity", "Wistfulness", "Hopelessness", "Desperation", "Loathing", "Ecstasy", "Indignation"],
       "scenarios": [
         "I spent a cozy evening at home with my favorite stuffed animals.",
         "I had a picnic in the park with my family on a sunny day.",
@@ -159,8 +159,8 @@
     {
       "name": "Anticipation",
       "sprite": "e8",
-      "difficulty": 3,
-      "incorrect" : ["Anger", "Sadness", "Melancholy", "Depressed", "Disgust", "Tired", "Resentment", "Boredom"],
+      "difficulty": 5,
+      "incorrect" : ["Melancholy", "Resentment", "Empathy", "Shame", "Adoration", "Regret", "Jealousy", "Curiosity", "Wistfulness", "Hopelessness", "Inspiration", "Desperation", "Loathing", "Ecstasy", "Serenity", "Indignation"],
       "scenarios": [
         "I couldn't wait for my birthday party and counted down the days.",
         "I knew there was a surprise waiting for me, and I was dying to find out what it was.",
@@ -171,8 +171,8 @@
     {
       "name": "Resentment",
       "sprite": "e13",
-      "difficulty": 3,
-      "incorrect" : ["Joy", "Amazed", "Happy", "Peaceful", "Relief", "Enthusiasm", "Awe", "Content", "Melancholy", "Boredom", "Pleasant", "Surprised"],
+      "difficulty": 5,
+      "incorrect" : ["Euphoria", "Anticipation", "Empathy", "Elation", "Shame", "Adoration", "Regret", "Optimism", "Curiosity", "Passion", "Wistfulness", "Inspiration", "Ecstasy", "Serenity"],
       "scenarios": [
         "I felt like my sibling was getting more attention than me, and it made me mad.",
         "I worked really hard on a school project, but someone else got all the credit.",
@@ -183,7 +183,8 @@
     {
       "name": "Loneliness",
       "sprite": "e11",
-      "difficulty": 4,
+      "difficulty": 2,
+      "incorrect" : ["Joy", "Anger", "Relief", "Enthusiasm", "Awe", "Disgust"],
       "scenarios": [
         "I had to spend the weekend alone because my parents were away.",
         "All my friends were busy, and I didn't have anyone to play with.",
@@ -194,7 +195,8 @@
     {
       "name": "Empathy",
       "sprite": "e11",
-      "difficulty": 4,
+      "difficulty": 6,
+      "incorrect" : ["Euphoria, "Anticipation", "Empathy", "Overwhelmed", "Elation", "Shame", "Adoration", "Regret", "Jealousy", "Curiosity", "Passion", "Wistfulness", "Inspiration", "Desperation", "Ecstasy", "Serenity"],
       "scenarios": [
         "I comforted a friend who was feeling sad and listened to their problems.",
         "I saw a classmate being bullied, and I stepped in to help them.",
@@ -203,9 +205,10 @@
       ]
     },
     {
-      "name": "Overwhelm",
+      "name": "Overwhelmed",
       "sprite": "e11",
-      "difficulty": 4,
+      "difficulty": 5,
+      "incorrect" : ["Empathy", "Overwhelmed", "Shame", "Adoration", "Jealousy", "Curiosity", "Wistfulness", "Inspiration", "Loathing", "Ecstasy", "Serenity"],
       "scenarios": [
         "I had so much homework to do that I didn't know where to start.",
         "I had a big school project, a soccer game, and a birthday party all on the same day.",
@@ -216,7 +219,8 @@
     {
       "name": "Confusion",
       "sprite": "e11",
-      "difficulty": 4,
+      "difficulty": 3,
+      "incorrect": ["Joy", "Relief", "Enthusiasm", "Awe", "Disgust"]
       "scenarios": [
         "I tried to follow the instructions for building a complicated LEGO set but got stuck.",
         "I read a book with lots of big words and didn't understand what it was about.",
@@ -227,7 +231,8 @@
     {
       "name": "Elation",
       "sprite": "e11",
-      "difficulty": 4,
+      "difficulty": 6,
+      "incorrect" : ["Melancholy", "Anticipation", "Resentment", "Empathy", "Shame", "Adoration", "Regret", "Jealousy", "Curiosity", "Wistfulness", "Hopelessness", "Desperation", "Loathing", "Indignation"],
       "scenarios": [
         "I found out I was going to a water park with all my friends.",
         "I got the highest score on a video game I had been playing for weeks.",
@@ -239,6 +244,7 @@
       "name": "Shame",
       "sprite": "e11",
       "difficulty": 5,
+      "incorrect" : ["Euphoria", "Anticipation", "Elation", "Adoration", "Optimism", "Jealousy", "Curiosity", "Passion", "Wistfulness", "Inspiration", "Loathing", "Ecstasy", "Serenity"],
       "scenarios": [
         "I got caught stealing cookies from the kitchen, and my parents were disappointed in me.",
         "I told a lie to cover up a mistake, and it made me feel guilty.",
@@ -249,7 +255,8 @@
     {
       "name": "Adoration",
       "sprite": "e11",
-      "difficulty": 5,
+      "difficulty": 4,
+      "incorrect" : ["Melancholy", "Anticipation", "Resentment", "Shame", "Regret", "Jealousy", "Curiosity", "Wistfulness", "Hopelessness", "Desperation", "Loathing", "Indignation"],
       "scenarios": [
         "I held a cute baby in my arms, and it made me feel warm inside.",
         "I saw a small kitten playing with a ball of yarn, and it was adorable.",
@@ -260,7 +267,8 @@
     {
       "name": "Panic",
       "sprite": "e11",
-      "difficulty": 5,
+      "difficulty": 3,
+      "incorrect" ["Joy", "Anger", "Relief", "Enthusiasm", "Awe", "Boredom", "Disgust"]
       "scenarios": [
         "I got separated from my parents in a crowded place and didn't know where they were.",
         "I was in a dark room, and the lights suddenly went out, and I couldn't see anything.",
@@ -271,7 +279,8 @@
     {
       "name": "Serenity",
       "sprite": "e11",
-      "difficulty": 5,
+      "difficulty": 7,
+      "incorrect" : ["Melancholy", "Resentment", "Empathy", "Overwhelmed", "Shame", "Regret", "Jealousy", "Curiosity", "Hopelessness", "Desperation", "Loathing", "Ecstasy", "Indignation"],
       "scenarios": [
         "I lay on the grass and looked up at the blue sky and fluffy clouds.",
         "I sat by a calm lake, and the water was so still and peaceful.",
@@ -282,7 +291,8 @@
     {
       "name": "Regret",
       "sprite": "e11",
-      "difficulty": 5,
+      "difficulty": 7,
+      "incorrect" : ["Euphoria", "Anticipation", "Empathy", "Elation", "Adoration", "Optimism", "Jealousy", "Curiosity", "Passion", "Inspiration", "Desperation", "Loathing", "Ecstasy", "Serenity"],
       "scenarios": [
         "I forgot to do my homework, and the teacher was disappointed in me.",
         "I said something mean to a friend, and it hurt their feelings.",
@@ -293,7 +303,8 @@
     {
       "name": "Optimism",
       "sprite": "e11",
-      "difficulty": 6,
+      "difficulty": 5,
+      "incorrect" : ["Melancholy", "Resentment", "Empathy", "Overwhelmed", "Shame", "Regret", "Jealousy", "Curiosity", "Wistfulness", "Hopelessness", "Desperation", "Loathing", "Indignation"],
       "scenarios": [
         "I faced a tough challenge at school and believed I could overcome it with hard work.",
         "I saw a rainbow after a rainstorm and thought it was a sign of good things to come.",
@@ -304,7 +315,8 @@
     {
       "name": "Jealousy",
       "sprite": "e11",
-      "difficulty": 6,
+      "difficulty": 4,
+      "incorrect" : ["Euphoria", "Empathy", "Overwhelmed", "Elation", "Shame", "Adoration", "Regret", "Optimism", "Passion", "Inspiration", "Desperation", "Ecstasy", "Serenity"],
       "scenarios": [
         "I felt jealous when my friend got a new toy that I wanted.",
         "I saw my classmate getting praised by the teacher, and I wished it was me.",
@@ -315,7 +327,8 @@
     {
       "name": "Curiosity",
       "sprite": "e11",
-      "difficulty": 6,
+      "difficulty": 5,
+      "incorrect" : ["Euphoria", "Melancholy", "Resentment", "Empathy", "Overwhelmed", "Elation", "Shame", "Adoration", "Regret", "Optimism", "Jealousy", "Wistfulness", "Hopelessness", "Desperation", "Loathing", "Ecstasy", "Serenity", "Indignation"],
       "scenarios": [
         "I saw a strange-looking bug in the garden and wanted to learn more about it.",
         "I asked my parents a million questions about space after watching a space documentary.",
@@ -326,7 +339,8 @@
     {
       "name": "Apathy",
       "sprite": "e11",
-      "difficulty": 6,
+      "difficulty": 8,
+      "incorrect": ["Disdain", "Mirth", "Contention", "Reverence", "Tranquility", "Vigor", "Humility", "Remorse", "Ambivalence"],
       "scenarios": [
         "I didn't really care about what game we played at recess and went along with the group.",
         "I didn't have a strong opinion about what we should have for dinner and just ate whatever was served.",
@@ -337,7 +351,8 @@
     {
       "name": "Passion",
       "sprite": "e11",
-      "difficulty": 6,
+      "difficulty": 5,
+      "incorrect" : ["Melancholy", "Anticipation", "Resentment", "Empathy", "Overwhelmed", "Shame", "Regret", "Jealousy", "Wistfulness", "Hopelessness", "Desperation", "Loathing", "Ecstasy", "Serenity", "Indignation"],
       "scenarios": [
         "I practiced my soccer skills every day because I loved playing soccer.",
         "I started a collection of something I was really interested in, like rocks or stamps.",
@@ -349,6 +364,7 @@
       "name": "Indignation",
       "sprite": "e11",
       "difficulty": 7,
+      "incorrect" : ["Euphoria", "Melancholy", "Anticipation", "Empathy", "Elation", "Shame", "Adoration", "Regret", "Optimism", "Jealousy", "Curiosity", "Passion", "Wistfulness", "Inspiration", "Ecstasy", "Serenity"],
       "scenarios": [
         "I saw someone being treated unfairly, and it made me really angry.",
         "I learned about a rule at school that I thought was unfair, and I wanted to change it.",
@@ -359,7 +375,8 @@
     {
       "name": "Contention",
       "sprite": "e11",
-      "difficulty": 7,
+      "difficulty": 8,
+      "incorrect": ["Mirth", "Reverence", "Tranquility", "Humility", "Ambivalence"],
       "scenarios": [
         "I had a disagreement with a friend about which game to play, and we argued about it.",
         "I was part of a debate at school where we had different opinions, and it got intense.",
@@ -370,7 +387,8 @@
     {
       "name": "Reverence",
       "sprite": "e11",
-      "difficulty": 7,
+      "difficulty": 9,
+      "incorrect": ["Disdain", "Mirth", "Contention", "Vigor", "Humility", "Remorse", "Ambivalence"],
       "scenarios": [
         "I visited a historic museum and saw artifacts from a long time ago.",
         "I attended a special ceremony at my place of worship, and it felt sacred.",
@@ -381,7 +399,8 @@
     {
       "name": "Wistfulness",
       "sprite": "e11",
-      "difficulty": 7,
+      "difficulty": 6,
+      "incorrect" : ["Empathy", "Overwhelmed", "Shame", "Jealousy", "Curiosity", "Inspiration", "Loathing", "Ecstasy", "Serenity"],
       "scenarios": [
         "I saw a picture of my grandparents when they were young and wished I could have met them then.",
         "I visited my old school and missed the friends I used to play with there.",
@@ -392,7 +411,8 @@
     {
       "name": "Hopelessness",
       "sprite": "e11",
-      "difficulty": 7,
+      "difficulty": 5,
+      "incorrect" : ["Euphoria", "Anticipation", "Elation", "Adoration", "Optimism", "Jealousy", "Curiosity", "Passion", "Wistfulness", "Inspiration", "Loathing", "Ecstasy", "Serenity"],
       "scenarios": [
         "I faced a really tough problem at school, and I didn't think I could solve it.",
         "I saw news about a big problem in the world, and it made me feel like nothing could change.",
@@ -403,7 +423,8 @@
     {
       "name": "Inspiration",
       "sprite": "e11",
-      "difficulty": 8,
+      "difficulty": 7,
+      "incorrect" : ["Melancholy", "Anticipation", "Resentment", "Empathy", "Overwhelmed", "Shame", "Regret", "Jealousy", "Wistfulness", "Hopelessness", "Desperation", "Loathing", "Ecstasy", "Serenity", "Indignation"],
       "scenarios": [
         "I read a book about a hero who overcame challenges, and it inspired me to be brave.",
         "I watched a documentary about people making a positive impact on the world, and it motivated me to help others.",
@@ -415,6 +436,7 @@
       "name": "Disdain",
       "sprite": "e11",
       "difficulty": 8,
+      "incorrect": ["Mirth", "Reverence", "Tranquility", "Vigor", "Humility", "Remorse", "Ambivalence"],
       "scenarios": [
         "I saw someone being mean to others and thought it was rude and disrespectful.",
         "I heard people making fun of someone because of how they looked, and it made me angry.",
@@ -426,6 +448,7 @@
       "name": "Mirth",
       "sprite": "e11",
       "difficulty": 8,
+      "incorrect": ["Disdain", "Contention", "Reverence", "Tranquility", "Vigor", "Humility", "Remorse", "Ambivalence"],
       "scenarios": [
         "I watched a funny cartoon that made me laugh so hard I couldn't stop.",
         "I played a silly game with my friends that had us all giggling.",
@@ -436,7 +459,8 @@
     {
       "name": "Desperation",
       "sprite": "e11",
-      "difficulty": 8,
+      "difficulty": 7,
+      "incorrect" : ["Euphoria", "Anticipation", "Empathy", "Elation", "Shame", "Adoration", "Optimism", "Jealousy", "Curiosity", "Passion", "Wistfulness", "Inspiration", "Loathing", "Ecstasy", "Serenity"],
       "scenarios": [
         "I got lost in a large and unfamiliar mall, and I couldn't find my parents.",
         "I faced a big storm while camping, and it felt like there was no way to stay dry.",
@@ -447,7 +471,8 @@
     {
       "name": "Tranquility",
       "sprite": "e11",
-      "difficulty": 8,
+      "difficulty": 9,
+      "incorrect": ["Disdain", "Mirth", "Contention", "Vigor", "Humility", "Remorse", "Ambivalence"],
       "scenarios": [
         "I lay in a hammock, feeling the gentle sway and listening to the birds chirping.",
         "I sat by a peaceful pond, watching the ripples on the water and feeling completely calm.",
@@ -459,6 +484,7 @@
       "name": "Vigor",
       "sprite": "e11",
       "difficulty": 9,
+      "incorrect": ["Disdain", "Mirth", "Contention", "Reverence", "Humility", "Remorse", "Ambivalence"],
       "scenarios": [
         "I finished a challenging obstacle course and felt full of energy and strength.",
         "I ran a race with all my might and crossed the finish line with a burst of vitality.",
@@ -469,7 +495,8 @@
     {
       "name": "Loathing",
       "sprite": "e11",
-      "difficulty": 9,
+      "difficulty": 5,
+      "incorrect" : ["Euphoria", "Anticipation", "Empathy", "Overwhelmed", "Elation", "Adoration", "Regret", "Optimism", "Jealousy", "Curiosity", "Passion", "Wistfulness", "Hopelessness", "Inspiration", "Desperation", "Ecstasy", "Serenity"],
       "scenarios": [
         "I witnessed an act of cruelty that filled me with intense hatred and disgust.",
         "I learned about a person who had hurt others intentionally, and it made me loathe their actions.",
@@ -480,7 +507,8 @@
     {
       "name": "Humility",
       "sprite": "e11",
-      "difficulty": 9,
+      "difficulty": 8,
+      "incorrect": ["Mirth" "Tranquility", "Vigor", "Ambivalence"],
       "scenarios": [
         "I made a mistake and admitted it, feeling humbled by my imperfections.",
         "I met someone who had achieved great success but remained humble and down-to-earth.",
@@ -492,6 +520,7 @@
       "name": "Remorse",
       "sprite": "e11",
       "difficulty": 10,
+      "incorrect": ["Disdain", "Mirth", "Contention", "Tranquility", "Vigor", "Ambivalence"],
       "scenarios": [
         "I hurt a friend's feelings with thoughtless words, and I regretted it deeply.",
         "I made a decision that had negative consequences for others, and it weighed on my conscience.",
@@ -502,7 +531,8 @@
     {
       "name": "Ecstasy",
       "sprite": "e11",
-      "difficulty": 10,
+      "difficulty": 6,
+      "incorrect" : ["Melancholy", "Resentment", "Empathy", "Shame", "Adoration", "Regret", "Jealousy", "Curiosity", "Wistfulness", "Hopelessness", "Desperation", "Loathing", "Indignation"],
       "scenarios": [
         "I went on a thrilling roller coaster ride and felt an incredible rush of excitement.",
         "I attended a music concert of my favorite band, and the energy in the crowd was ecstatic.",
@@ -514,6 +544,7 @@
       "name": "Ambivalence",
       "sprite": "e11",
       "difficulty": 10,
+      "incorrect": ["Disdain", "Mirth", "Reverence", "Tranquility", "Vigor", "Humility", "Remorse"],
       "scenarios": [
         "I couldn't decide which flavor of ice cream to choose because they all sounded equally good.",
         "I had mixed feelings about a decision and couldn't make up my mind.",
