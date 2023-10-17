@@ -57,6 +57,7 @@ public class TextScript : MonoBehaviour
 
         if (!textSkipped && Input.GetMouseButtonDown(0))
         {
+            Debug.Log("Left mouse was clicked.");
             textSkipped = true;
             textFinished = true;
         }
@@ -102,33 +103,33 @@ public class TextScript : MonoBehaviour
 
         //Debug.Log(path);
         //tmp.text = situation;
-        Debug.Log("tmp.text initialise " + tmp.text);
         tmp.text = "";
         txt = scenario;
-        Debug.Log("txt " + txt);
         StartCoroutine("TypeWriterTMP");       
         //TypeWriterTMP(situation);
     }
 
     IEnumerator TypeWriterTMP()
     {
-        yield return new WaitForSecondsRealtime(delayBeforeStart);
+        yield return new WaitForSeconds(delayBeforeStart);
 
         foreach (char c in txt)
         {
             if (textSkipped) {
+                Debug.Log("Text skipped!");
                 tmp.text = txt; 
                 break; 
             }
-
+           
             tmp.text += c;
-            yield return new WaitForSecondsRealtime(timeBtwChars);
+            yield return new WaitForSeconds(timeBtwChars);
         }
 
         textFinished = true; 
     }
 
 
+ 
 }
 
 

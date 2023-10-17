@@ -19,7 +19,7 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("Level 1", LoadSceneMode.Single);
+        SceneManager.LoadScene("Level 1");
         GameObject[] bgmObjects = GameObject.FindGameObjectsWithTag("bgm");
         foreach (GameObject bgmObject in bgmObjects)
         {
