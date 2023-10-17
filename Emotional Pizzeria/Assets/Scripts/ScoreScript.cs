@@ -6,7 +6,7 @@ using TMPro;
 public class ScoreScript : MonoBehaviour
 { 
 
-    public int CountFPS = 1; 
+    public int CountFPS = 30; 
     public float Duration = 1f; 
     private Coroutine CountingCoroutine; 
     [SerializeField] private TMP_Text tmp; 
@@ -52,15 +52,7 @@ public class ScoreScript : MonoBehaviour
         int previousValue = currScore; 
         int stepAmount; 
 
-        if (newScore - previousValue < 0) 
-        {
-            stepAmount = Mathf.FloorToInt((newScore - previousValue) / (CountFPS * Duration));
-        }
-        else 
-        {
-            stepAmount = Mathf.CeilToInt((newScore - previousValue) / (CountFPS * Duration));
-        }
-        Debug.Log(stepAmount);
+        stepAmount = 1;
 
         if (previousValue < newScore)
         {
