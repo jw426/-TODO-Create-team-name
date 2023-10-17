@@ -12,6 +12,7 @@ public class PauseMenuHandler : MonoBehaviour
 
 {
     public static bool gamePaused = false;
+    [SerializeField] GameObject level;
     // Start is called before the first frame update
     void Start()
     {
@@ -49,6 +50,14 @@ public class PauseMenuHandler : MonoBehaviour
     {
         Debug.Log("p");
         Time.timeScale = 1f;
+    }
+
+    /* Loading Other Scenes */
+    public void ReturnToMenu()
+    {
+        level.GetComponent<Spawner>().RemoveCurrCustomer();
+        SceneManager.LoadScene("Main Menu", LoadSceneMode.Single);
+        Debug.Log("Main menu");
     }
 
 }

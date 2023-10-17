@@ -15,6 +15,7 @@ public class ScenarioScript : MonoBehaviour
     [System.Serializable]
     public class Emotion{
         public string name;
+        public string[] incorrect;
         public string sprite;
         public int difficulty;
         public string[] scenarios;
@@ -33,6 +34,14 @@ public class ScenarioScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+<<<<<<< HEAD
+=======
+
+    }
+
+    public Emotion getChosenEmotion()
+    {
+>>>>>>> fixed_typing
         // Read in the emotions.json file, parse it, and find the root element
         emotionList = JsonUtility.FromJson<EmotionList>(emotionsJSON.text);
 

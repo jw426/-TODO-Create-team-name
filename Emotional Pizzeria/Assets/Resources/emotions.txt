@@ -4,6 +4,7 @@
       "name": "Joy",
       "sprite": "e11",
       "difficulty": 1,
+      "incorrect" : ["Anger", "Sadness", "Melancholy", "Depressed", "Disgust", "Tired", "Boredom"],
       "scenarios": [
         "I received a surprise gift on my birthday.",
         "I won a game I really enjoy playing with my friends.",
@@ -15,6 +16,7 @@
       "name": "Sadness",
       "sprite": "e5",
       "difficulty": 1,
+       "incorrect" : ["Joy", "Amazed", "Happy", "Peaceful", "Relief", "Enthusiasm", "Awe"],
       "scenarios": [
         "I lost my favorite toy and couldn't find it anywhere.",
         "My best friend moved to a different city, and I miss them a lot.",
@@ -26,6 +28,7 @@
       "name": "Anger",
       "sprite": "e3",
       "difficulty": 1,
+      "incorrect" : ["Joy", "Amazed", "Happy", "Peaceful", "Relief", "Enthusiasm", "Awe"],
       "scenarios": [
         "Someone took my favorite snack without asking, and I got really mad.",
         "I had an argument with my sibling, and we both yelled at each other.",
@@ -37,6 +40,7 @@
       "name": "Fear",
       "sprite": "e1",
       "difficulty": 1,
+      "incorrect" : ["Joy", "Amazed", "Happy", "Peaceful", "Relief", "Enthusiasm", "Anger", "Awe"],
       "scenarios": [
         "I heard a strange noise at night when I was alone in my room.",
         "I watched a scary movie, and it gave me nightmares.",
@@ -48,6 +52,7 @@
       "name": "Relief",
       "sprite": "e9",
       "difficulty": 1,
+      "incorrect" : ["Anger", "Sadness", "Melancholy", "Depressed", "Disgust", "Boredom", "Awe"],
       "scenarios": [
         "I thought I lost my favorite book but found it under my bed.",
         "I was worried I'd miss my school bus, but I made it just in time.",
@@ -59,6 +64,7 @@
       "name": "Euphoria",
       "sprite": "e11",
       "difficulty": 2,
+      "incorrect" : ["Anger", "Sadness", "Depressed", "Disgusted", "Tired", "Boredom", "Despair", "Resentment"],
       "scenarios": [
         "I won first place in a school talent show, and everyone clapped for me.",
         "I found out I was going to Disneyland, and I couldn't stop smiling.",
@@ -70,6 +76,7 @@
       "name": "Despair",
       "sprite": "e1",
       "difficulty": 2,
+      "incorrect" : ["Joy", "Amazed", "Happy", "Peaceful", "Relief", "Enthusiasm", "Anger", "Awe", "Content", "Melancholy", "Boredom"],
       "scenarios": [
         "I lost my school project the night before it was due, and I couldn't redo it.",
         "My pet ran away from home, and I searched for it everywhere.",
@@ -81,6 +88,7 @@
       "name": "Melancholy",
       "sprite": "e5",
       "difficulty": 2,
+      "incorrect" : ["Anger", "Sadness", "Depressed", "Disgust", "Boredom", "Anticipation", "Resentment", "Awe", "Excited"],
       "scenarios": [
         "I looked at old family photos and felt nostalgic about the past.",
         "I visited a place I used to go with my grandparents, and they're not here anymore.",
@@ -92,6 +100,7 @@
       "name": "Awe",
       "sprite": "e12",
       "difficulty": 2,
+      "incorrect" : ["Anger", "Sadness", "Depressed", "Disgusted", "Tired", "Bored"],
       "scenarios": [
         "I saw a beautiful rainbow after a rainstorm and couldn't believe my eyes.",
         "I went to a planetarium and saw the stars and planets up close.",
@@ -103,6 +112,7 @@
       "name": "Boredom",
       "sprite": "e10",
       "difficulty": 2,
+      "incorrect" : ["Joy", "Amazed", "Happy", "Relief", "Enthusiasm", "Despair", "Awe", "Content", "Melancholy"],
       "scenarios": [
         "I had to sit through a long lecture at school on a topic I wasn't interested in.",
         "I had nothing to do on a rainy day, and all my friends were busy.",
@@ -114,6 +124,7 @@
       "name": "Enthusiasm",
       "sprite": "e4",
       "difficulty": 3,
+      "incorrect" : ["Anger", "Sadness", "Melancholy", "Depressed", "Disgust", "Tired", "Boredom", "Anticipation", "Resentment"],
       "scenarios": [
         "I found out I was going to a theme park for the first time.",
         "I started a new hobby like learning to play a musical instrument.",
@@ -125,6 +136,7 @@
       "name": "Disgust",
       "sprite": "e10",
       "difficulty": 3,
+      "incorrect" : ["Joy", "Amazed", "Happy", "Peaceful", "Relief", "Enthusiasm", "Furious", "Awe", "Content", "Melancholy", "Boredom", "Pleasant"],
       "scenarios": [
         "I accidentally touched something slimy and gross.",
         "I saw someone pick their nose and thought it was yucky.",
@@ -136,6 +148,7 @@
       "name": "Contentment",
       "sprite": "e9",
       "difficulty": 3,
+      "incorrect" : ["Anger", "Sadness", "Melancholy", "Depressed", "Disgust", "Tired", "Boredom", "Anticipation", "Resentment"],
       "scenarios": [
         "I spent a cozy evening at home with my favorite stuffed animals.",
         "I had a picnic in the park with my family on a sunny day.",
@@ -147,6 +160,7 @@
       "name": "Anticipation",
       "sprite": "e8",
       "difficulty": 3,
+      "incorrect" : ["Anger", "Sadness", "Melancholy", "Depressed", "Disgust", "Tired", "Resentment", "Boredom"],
       "scenarios": [
         "I couldn't wait for my birthday party and counted down the days.",
         "I knew there was a surprise waiting for me, and I was dying to find out what it was.",
@@ -158,6 +172,7 @@
       "name": "Resentment",
       "sprite": "e13",
       "difficulty": 3,
+      "incorrect" : ["Joy", "Amazed", "Happy", "Peaceful", "Relief", "Enthusiasm", "Awe", "Content", "Melancholy", "Boredom", "Pleasant", "Surprised"],
       "scenarios": [
         "I felt like my sibling was getting more attention than me, and it made me mad.",
         "I worked really hard on a school project, but someone else got all the credit.",

@@ -11,6 +11,10 @@ public class QuizManager : MonoBehaviour
     public GameObject[] options;
     public int currentQuestion;
     public TMP_Text QuestionTxt;
+    public AudioSource wrongAnswer;
+    public AudioSource correctAnswer;
+    [SerializeField] GameObject submitBtn; 
+    [SerializeField] GameObject[] choices; 
 
     public GameObject QuizPanel;
     public GameObject GoPanel;
@@ -34,6 +38,7 @@ public class QuizManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
+<<<<<<< HEAD
     void GameOver()
     {
         QuizPanel.SetActive(false);
@@ -45,16 +50,53 @@ public class QuizManager : MonoBehaviour
 /// <summary>
 /// removes quetsion once answered and generates new question
 /// </summary>
+=======
+    public void SubmitOrder()
+    {
+        score = 1;
+        QuizPanel.SetActive(false);
+    }
+
+    /// <summary>
+    /// removes quetsion once answered and generates new question
+    /// </summary>
+>>>>>>> fixed_typing
     public void correct()
     {
+        // sound effect
+        correctAnswer.Play();
+        submitBtn.SetActive(true);
+
+        for (int i = 0; i < choices.Length; i++) 
+        {
+            choices[i].GetComponent<Button>().interactable = false; 
+        }
+        
+        // yield return new WaitForSeconds(2f);
+
         // when correct
+<<<<<<< HEAD
         score += 1;
         QnA.RemoveAt(currentQuestion);
         generateQuestion();
+=======
+        // score = 1;
+        // QuizPanel.SetActive(false);
+        
+        //QnA.RemoveAt(currentQuestion);
+        //generateQuestion();
+>>>>>>> fixed_typing
     }
 
     public void wrong()
     {
+<<<<<<< HEAD
+=======
+        // sound effect
+        wrongAnswer.Play();
+
+        //score = 0;
+>>>>>>> fixed_typing
         // when incorrect
         QnA.RemoveAt(currentQuestion);
         generateQuestion();
