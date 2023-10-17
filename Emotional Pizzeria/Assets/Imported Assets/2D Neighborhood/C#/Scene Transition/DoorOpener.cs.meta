@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Emotional Pizzeria/Assets/Imported Assets/2D Neighborhood/C#/Scene Transition/DoorOpener.cs.meta
 guid: 084bd92130197444bbd9a87e6c03e118
+========
+guid: 48bba52ccd75254409d60d9e56c52a6e
+>>>>>>>> fixed_typing:Emotional Pizzeria/Assets/Imported Assets/2D Neighborhood/C#/BG/ParallaxEffect.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
