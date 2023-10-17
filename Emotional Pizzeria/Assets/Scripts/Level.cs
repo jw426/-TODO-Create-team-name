@@ -26,7 +26,12 @@ public class Level : MonoBehaviour
         /* Time to go to next level */
         if (totalScore == maxCustomers)
         {
-            endLevel.SetActive(true);
+            GetComponent<Spawner>().HasNoCustomer();
+
+            if (GetComponent<Spawner>().customerOutStopped())
+            {
+                endLevel.SetActive(true);
+            }
         }
 
         /* Time to go to next customer */
