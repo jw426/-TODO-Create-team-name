@@ -1640,6 +1640,7 @@ GameObject:
   - component: {fileID: 548950966}
   - component: {fileID: 548950965}
   - component: {fileID: 548950967}
+  - component: {fileID: 548950968}
   m_Layer: 0
   m_Name: Hearts Box
   m_TagString: scoreManager
@@ -1722,6 +1723,19 @@ MonoBehaviour:
   Duration: 1
   tmp: {fileID: 538327621}
   cashierSound: {fileID: 422869035}
+--- !u!114 &548950968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 548950963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6106a9ff28c4c45d7991c131c5a76b5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curNumHeartsText: {fileID: 0}
 --- !u!1 &588247070
 GameObject:
   m_ObjectHideFlags: 0

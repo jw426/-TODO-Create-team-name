@@ -134,7 +134,7 @@
     },
     {
       "name": "Disgust",
-      "sprite": "e10",
+      "sprite": "e13",
       "difficulty": 3,
       "incorrect" : ["Joy", "Relief", "Loneliness", "Enthusiasm", "Awe", "Boredom", "Despair"],
       "scenarios": [
@@ -182,7 +182,7 @@
     },
     {
       "name": "Loneliness",
-      "sprite": "e11",
+      "sprite": "e5",
       "difficulty": 2,
       "incorrect" : ["Joy", "Anger", "Relief", "Enthusiasm", "Awe", "Disgust"],
       "scenarios": [
@@ -194,7 +194,7 @@
     },
     {
       "name": "Empathy",
-      "sprite": "e11",
+      "sprite": "e4",
       "difficulty": 6,
       "incorrect" : ["Euphoria", "Anticipation", "Overwhelmed", "Elation", "Shame", "Adoration", "Regret", "Jealousy", "Curiosity", "Passion", "Wistfulness", "Inspiration", "Desperation", "Ecstasy", "Serenity"],
       "scenarios": [
@@ -206,7 +206,7 @@
     },
     {
       "name": "Overwhelmed",
-      "sprite": "e11",
+      "sprite": "e1",
       "difficulty": 5,
       "incorrect" : ["Empathy", "Shame", "Adoration", "Jealousy", "Curiosity", "Wistfulness", "Inspiration", "Loathing", "Ecstasy", "Serenity"],
       "scenarios": [
@@ -218,7 +218,7 @@
     },
     {
       "name": "Confusion",
-      "sprite": "e11",
+      "sprite": "e5",
       "difficulty": 3,
       "incorrect": ["Joy", "Relief", "Enthusiasm", "Awe", "Disgust"],
       "scenarios": [
@@ -242,7 +242,7 @@
     },
     {
       "name": "Shame",
-      "sprite": "e11",
+      "sprite": "e5",
       "difficulty": 5,
       "incorrect" : ["Euphoria", "Anticipation", "Elation", "Adoration", "Optimism", "Jealousy", "Curiosity", "Passion", "Wistfulness", "Inspiration", "Loathing", "Ecstasy", "Serenity"],
       "scenarios": [
@@ -254,7 +254,7 @@
     },
     {
       "name": "Adoration",
-      "sprite": "e11",
+      "sprite": "e4",
       "difficulty": 4,
       "incorrect" : ["Melancholy", "Anticipation", "Resentment", "Shame", "Regret", "Jealousy", "Curiosity", "Wistfulness", "Hopelessness", "Desperation", "Loathing", "Indignation"],
       "scenarios": [
@@ -266,7 +266,7 @@
     },
     {
       "name": "Panic",
-      "sprite": "e11",
+      "sprite": "e1",
       "difficulty": 3,
       "incorrect": ["Joy", "Anger", "Relief", "Enthusiasm", "Awe", "Boredom", "Disgust"],
       "scenarios": [
@@ -278,7 +278,7 @@
     },
     {
       "name": "Serenity",
-      "sprite": "e11",
+      "sprite": "e9",
       "difficulty": 7,
       "incorrect" : ["Melancholy", "Resentment", "Empathy", "Overwhelmed", "Shame", "Regret", "Jealousy", "Curiosity", "Hopelessness", "Desperation", "Loathing", "Ecstasy", "Indignation"],
       "scenarios": [
@@ -290,7 +290,7 @@
     },
     {
       "name": "Regret",
-      "sprite": "e11",
+      "sprite": "e5",
       "difficulty": 7,
       "incorrect" : ["Euphoria", "Anticipation", "Empathy", "Elation", "Adoration", "Optimism", "Jealousy", "Curiosity", "Passion", "Inspiration", "Desperation", "Loathing", "Ecstasy", "Serenity"],
       "scenarios": [
@@ -302,7 +302,7 @@
     },
     {
       "name": "Optimism",
-      "sprite": "e11",
+      "sprite": "e2",
       "difficulty": 5,
       "incorrect" : ["Melancholy", "Resentment", "Empathy", "Overwhelmed", "Shame", "Regret", "Jealousy", "Curiosity", "Wistfulness", "Hopelessness", "Desperation", "Loathing", "Indignation"],
       "scenarios": [
@@ -314,7 +314,7 @@
     },
     {
       "name": "Jealousy",
-      "sprite": "e11",
+      "sprite": "e13",
       "difficulty": 4,
       "incorrect" : ["Euphoria", "Empathy", "Overwhelmed", "Elation", "Shame", "Adoration", "Regret", "Optimism", "Passion", "Inspiration", "Desperation", "Ecstasy", "Serenity"],
       "scenarios": [
@@ -326,7 +326,7 @@
     },
     {
       "name": "Curiosity",
-      "sprite": "e11",
+      "sprite": "e8",
       "difficulty": 5,
       "incorrect" : ["Euphoria", "Melancholy", "Resentment", "Empathy", "Overwhelmed", "Elation", "Shame", "Adoration", "Regret", "Optimism", "Jealousy", "Wistfulness", "Hopelessness", "Desperation", "Loathing", "Ecstasy", "Serenity", "Indignation"],
       "scenarios": [
@@ -338,7 +338,7 @@
     },
     {
       "name": "Apathy",
-      "sprite": "e11",
+      "sprite": "e5",
       "difficulty": 8,
       "incorrect": ["Disdain", "Mirth", "Contention", "Reverence", "Tranquility", "Vigor", "Humility", "Remorse", "Ambivalence"],
       "scenarios": [
@@ -362,7 +362,7 @@
     },
     {
       "name": "Indignation",
-      "sprite": "e11",
+      "sprite": "e13",
       "difficulty": 7,
       "incorrect" : ["Euphoria", "Melancholy", "Anticipation", "Empathy", "Elation", "Shame", "Adoration", "Regret", "Optimism", "Jealousy", "Curiosity", "Passion", "Wistfulness", "Inspiration", "Ecstasy", "Serenity"],
       "scenarios": [
@@ -374,7 +374,7 @@
     },
     {
       "name": "Contention",
-      "sprite": "e11",
+      "sprite": "e8",
       "difficulty": 8,
       "incorrect": ["Mirth", "Reverence", "Tranquility", "Humility", "Ambivalence"],
       "scenarios": [
@@ -386,7 +386,7 @@
     },
     {
       "name": "Reverence",
-      "sprite": "e11",
+      "sprite": "e12",
       "difficulty": 9,
       "incorrect": ["Disdain", "Mirth", "Contention", "Vigor", "Humility", "Remorse", "Ambivalence"],
       "scenarios": [
@@ -398,7 +398,7 @@
     },
     {
       "name": "Wistfulness",
-      "sprite": "e11",
+      "sprite": "e5",
       "difficulty": 6,
       "incorrect" : ["Empathy", "Overwhelmed", "Shame", "Jealousy", "Curiosity", "Inspiration", "Loathing", "Ecstasy", "Serenity"],
       "scenarios": [
@@ -410,7 +410,7 @@
     },
     {
       "name": "Hopelessness",
-      "sprite": "e11",
+      "sprite": "e5",
       "difficulty": 5,
       "incorrect" : ["Euphoria", "Anticipation", "Elation", "Adoration", "Optimism", "Jealousy", "Curiosity", "Passion", "Wistfulness", "Inspiration", "Loathing", "Ecstasy", "Serenity"],
       "scenarios": [
@@ -422,7 +422,7 @@
     },
     {
       "name": "Inspiration",
-      "sprite": "e11",
+      "sprite": "e4",
       "difficulty": 7,
       "incorrect" : ["Melancholy", "Anticipation", "Resentment", "Empathy", "Overwhelmed", "Shame", "Regret", "Jealousy", "Wistfulness", "Hopelessness", "Desperation", "Loathing", "Ecstasy", "Serenity", "Indignation"],
       "scenarios": [
@@ -434,7 +434,7 @@
     },
     {
       "name": "Disdain",
-      "sprite": "e11",
+      "sprite": "e13",
       "difficulty": 8,
       "incorrect": ["Mirth", "Reverence", "Tranquility", "Vigor", "Humility", "Remorse", "Ambivalence"],
       "scenarios": [
@@ -458,7 +458,7 @@
     },
     {
       "name": "Desperation",
-      "sprite": "e11",
+      "sprite": "e1",
       "difficulty": 7,
       "incorrect" : ["Euphoria", "Anticipation", "Empathy", "Elation", "Shame", "Adoration", "Optimism", "Jealousy", "Curiosity", "Passion", "Wistfulness", "Inspiration", "Loathing", "Ecstasy", "Serenity"],
       "scenarios": [
@@ -470,7 +470,7 @@
     },
     {
       "name": "Tranquility",
-      "sprite": "e11",
+      "sprite": "e9",
       "difficulty": 9,
       "incorrect": ["Disdain", "Mirth", "Contention", "Vigor", "Humility", "Remorse", "Ambivalence"],
       "scenarios": [
@@ -482,7 +482,7 @@
     },
     {
       "name": "Vigor",
-      "sprite": "e11",
+      "sprite": "e2",
       "difficulty": 9,
       "incorrect": ["Disdain", "Mirth", "Contention", "Reverence", "Humility", "Remorse", "Ambivalence"],
       "scenarios": [
@@ -494,7 +494,7 @@
     },
     {
       "name": "Loathing",
-      "sprite": "e11",
+      "sprite": "e6",
       "difficulty": 5,
       "incorrect" : ["Euphoria", "Anticipation", "Empathy", "Overwhelmed", "Elation", "Adoration", "Regret", "Optimism", "Jealousy", "Curiosity", "Passion", "Wistfulness", "Hopelessness", "Inspiration", "Desperation", "Ecstasy", "Serenity"],
       "scenarios": [
@@ -506,7 +506,7 @@
     },
     {
       "name": "Humility",
-      "sprite": "e11",
+      "sprite": "e8",
       "difficulty": 8,
       "incorrect": ["Mirth", "Tranquility", "Vigor", "Ambivalence"],
       "scenarios": [
@@ -518,7 +518,7 @@
     },
     {
       "name": "Remorse",
-      "sprite": "e11",
+      "sprite": "e5",
       "difficulty": 10,
       "incorrect": ["Disdain", "Mirth", "Contention", "Tranquility", "Vigor", "Ambivalence"],
       "scenarios": [
@@ -542,7 +542,7 @@
     },
     {
       "name": "Ambivalence",
-      "sprite": "e11",
+      "sprite": "e8",
       "difficulty": 10,
       "incorrect": ["Disdain", "Mirth", "Reverence", "Tranquility", "Vigor", "Humility", "Remorse"],
       "scenarios": [

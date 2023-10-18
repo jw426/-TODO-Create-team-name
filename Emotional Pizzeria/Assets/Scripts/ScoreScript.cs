@@ -11,7 +11,7 @@ public class ScoreScript : MonoBehaviour
     private Coroutine CountingCoroutine; 
     [SerializeField] private TMP_Text tmp; 
     private static int currScore; 
-    [SerializeField] private AudioSource cashierSound; 
+    [SerializeField] private AudioSource cashierSound;
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +32,8 @@ public class ScoreScript : MonoBehaviour
         cashierSound.Play();
         UpdateText(currScore + by);
         currScore += by;
+        Database db = GetComponent<Database>();
+        db.addHearts(by);
         //Debug.Log("currScore is: " + currScore);
         // ScoreScript sc = scoreManager.GetComponent<ScoreScript>();
     }

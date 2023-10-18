@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System;
+using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 using Mono.Data.Sqlite;
@@ -12,19 +13,23 @@ using Mono.Data.Sqlite;
 public class Database : MonoBehaviour
 {
 
+    private string dbFilePath = "data/ega.db";
     private string dbName = "URI=file:data/ega.db";
     private int curNumHearts;
     public Text curNumHeartsText;
+    public GameObject databaseCheck;    
+    private bool databasePresent = true;
+    public bool requiresPopup;
  
     // Start is called before the first frame update
     void Start()
     {   
         CreateDB();
 
-        curNumHearts = getCurNumHearts();
+        //curNumHearts = getCurNumHearts();
         //curNumHeartsText = "Hearts: " + curNumHearts;
 
-        Debug.Log("Current number of hearts: " + curNumHearts);
+        //Debug.Log("Current number of hearts: " + curNumHearts);
 
         //Test functions
         //addHeart();
@@ -37,6 +42,10 @@ public class Database : MonoBehaviour
     /// </summary>
     /// <returns> The number of hearts stored in the database </returns>
     public int getCurNumHearts(){
+        if (!databasePresent){
+            Debug.Log("No hearts found as database is missing.");
+            return -1;
+        }
         using (var conn = new SqliteConnection(dbName))
         {
             conn.Open();
@@ -64,17 +73,21 @@ public class Database : MonoBehaviour
     /// Adds n hearts to the database
     /// </summary>
     /// <param name="n"> The number of hearts to add to the database </param>
-    public void addHeart() { 
+    public void addHearts(int n) { 
+        if (!databasePresent){
+            Debug.Log("No hearts added as database is missing.");
+            return;
+        }
         using (var conn = new SqliteConnection(dbName))
         {
             conn.Open();
 
             using (var cmd = conn.CreateCommand())
             {
-                curNumHearts+=1;
+                curNumHearts+=n;
                 cmd.CommandText = $"insert into game1_hearts(hearts) values({curNumHearts});";
                 cmd.ExecuteNonQuery();
-                Debug.Log("Added hearts");
+                Debug.Log($"Added {n} hearts");
                 //showHearts();
             }
 
@@ -87,6 +100,10 @@ public class Database : MonoBehaviour
     /// Shows the current number of hearts
     /// </summary>
     public void showHearts() {
+        if (!databasePresent){
+            Debug.Log("No hearts shown as database is missing.");
+            return;
+        }
         using (var conn = new SqliteConnection(dbName))
         {
             conn.Open();
@@ -113,6 +130,13 @@ public class Database : MonoBehaviour
     /// </summary>
     public void CreateDB()
     {
+        Debug.Log(dbFilePath);
+        if (!File.Exists(dbFilePath)){
+            if (requiresPopup) databaseCheck.SetActive(true);
+            databasePresent = false;
+            return;
+        }
+
         using (var conn = new SqliteConnection(dbName))
         {
             conn.Open();
@@ -125,5 +149,9 @@ public class Database : MonoBehaviour
 
             conn.Close();
         }
+    }
+
+    public void deactivatePopup(){
+        databaseCheck.SetActive(false);
     }
 }
