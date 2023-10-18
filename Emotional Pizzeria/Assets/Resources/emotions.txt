@@ -20,7 +20,7 @@
       "scenarios": [
         "I lost my favorite toy and couldn't find it anywhere.",
         "My best friend moved to a different city, and I miss them a lot.",
-        "I didn't do well on a test at school, and it made me feel sad.",
+        "I didn't do well on a test at school, and it lowered my spirits.",
         "I had to say goodbye to my pet because it got sick."
       ]
     },
@@ -32,7 +32,7 @@
       "scenarios": [
         "Someone took my favorite snack without asking, and I got really mad.",
         "I had an argument with my sibling, and we both yelled at each other.",
-        "A friend broke my toy, and I felt angry because they didn't apologize.",
+        "A friend broke my toy, and they didn't even apologize.",
         "I got in trouble for something I didn't do, and it made me furious."
       ]
     },
@@ -189,7 +189,7 @@
         "I had to spend the weekend alone because my parents were away.",
         "All my friends were busy, and I didn't have anyone to play with.",
         "I moved to a new school, and I didn't know anyone yet.",
-        "I felt like nobody understood how I was feeling, and it made me sad."
+        "I felt like nobody understood how I was feeling."
       ]
     },
     {
@@ -273,7 +273,7 @@
         "I got separated from my parents in a crowded place and didn't know where they were.",
         "I was in a dark room, and the lights suddenly went out, and I couldn't see anything.",
         "I heard a loud noise that sounded like thunder, and it scared me a lot.",
-        "I was in a swimming pool and accidentally went too deep, and I started to panic."
+        "I was in a swimming pool and accidentally went too deep, so I felt like I was losing control."
       ]
     },
     {
@@ -296,7 +296,7 @@
       "scenarios": [
         "I forgot to do my homework, and the teacher was disappointed in me.",
         "I said something mean to a friend, and it hurt their feelings.",
-        "I missed a fun event because I didn't sign up in time, and I regretted it.",
+        "I missed a fun event because I didn't sign up in time, and I felt like I really missed out.",
         "I didn't practice for a piano recital, and I made mistakes during the performance."
       ]
     },
@@ -318,10 +318,10 @@
       "difficulty": 4,
       "incorrect" : ["Euphoria", "Empathy", "Overwhelmed", "Elation", "Shame", "Adoration", "Regret", "Optimism", "Passion", "Inspiration", "Desperation", "Ecstasy", "Serenity"],
       "scenarios": [
-        "I felt jealous when my friend got a new toy that I wanted.",
+        "My friend got a new toy that I really wanted.",
         "I saw my classmate getting praised by the teacher, and I wished it was me.",
         "I felt envious of a friend's amazing drawing because I wished I could draw like that.",
-        "I was jealous when my cousin got a bigger slice of cake at a family party."
+        "My cousin got a bigger slice of cake than me at a family party."
       ]
     },
     {
@@ -357,7 +357,7 @@
         "I practiced my soccer skills every day because I loved playing soccer.",
         "I started a collection of something I was really interested in, like rocks or stamps.",
         "I fell in love with a book series and couldn't stop reading every book in it.",
-        "I joined a dance class and felt so passionate about dancing that I practiced all the time."
+        "I joined a dance class and I wanted to practice all the time."
       ]
     },
     {
@@ -426,7 +426,7 @@
       "difficulty": 7,
       "incorrect" : ["Melancholy", "Anticipation", "Resentment", "Empathy", "Overwhelmed", "Shame", "Regret", "Jealousy", "Wistfulness", "Hopelessness", "Desperation", "Loathing", "Ecstasy", "Serenity", "Indignation"],
       "scenarios": [
-        "I read a book about a hero who overcame challenges, and it inspired me to be brave.",
+        "I read a book about a hero who overcame challenges, and it made me want to be brave.",
         "I watched a documentary about people making a positive impact on the world, and it motivated me to help others.",
         "I heard a story about someone who achieved their dreams despite obstacles, and it made me believe in myself.",
         "I saw an athlete breaking records, and it encouraged me to set my own goals and work hard to achieve them."
@@ -453,7 +453,7 @@
         "I watched a funny cartoon that made me laugh so hard I couldn't stop.",
         "I played a silly game with my friends that had us all giggling.",
         "I listened to a joke that was so hilarious it made me laugh until my stomach hurt.",
-        "I saw a comedian perform live, and their jokes had the whole audience in stitches."
+        "I saw a comedian perform live, and their jokes had me in stitches."
       ]
     },
     {
@@ -477,7 +477,7 @@
         "I lay in a hammock, feeling the gentle sway and listening to the birds chirping.",
         "I sat by a peaceful pond, watching the ripples on the water and feeling completely calm.",
         "I closed my eyes and took deep breaths, meditating in a quiet and serene garden.",
-        "I watched the sunset over a tranquil forest, and the colors in the sky made me feel at peace."
+        "I watched the sunset over a beautiful forest, and the colors in the sky made me feel at peace."
       ]
     },
     {
@@ -499,7 +499,7 @@
       "incorrect" : ["Euphoria", "Anticipation", "Empathy", "Overwhelmed", "Elation", "Adoration", "Regret", "Optimism", "Jealousy", "Curiosity", "Passion", "Wistfulness", "Hopelessness", "Inspiration", "Desperation", "Ecstasy", "Serenity"],
       "scenarios": [
         "I witnessed an act of cruelty that filled me with intense hatred and disgust.",
-        "I learned about a person who had hurt others intentionally, and it made me loathe their actions.",
+        "I learned about a person who had hurt others intentionally, and it made me hate their actions.",
         "I saw someone being unfairly treated and despised the injustice of it all.",
         "I encountered someone who spread hate and discrimination, and it made me feel deep revulsion."
       ]
@@ -512,8 +512,8 @@
       "scenarios": [
         "I made a mistake and admitted it, feeling humbled by my imperfections.",
         "I met someone who had achieved great success but remained humble and down-to-earth.",
-        "I volunteered to help those in need, and it reminded me of the importance of humility.",
-        "I listened to a wise elder share their life experiences, and it taught me the value of humility."
+        "I volunteered to help those in need.",
+        "I listened to a wise elder share their life experiences, and realised I had a lot to learn from them."
       ]
     },
     {
@@ -524,7 +524,7 @@
       "scenarios": [
         "I hurt a friend's feelings with thoughtless words, and I regretted it deeply.",
         "I made a decision that had negative consequences for others, and it weighed on my conscience.",
-        "I broke something valuable that belonged to someone else, and I felt a strong sense of remorse.",
+        "I broke something valuable that belonged to someone else, and I felt really bad about it.",
         "I let someone down when they needed me, and I wished I could go back and do things differently."
       ]
     },
@@ -535,9 +535,9 @@
       "incorrect" : ["Melancholy", "Resentment", "Empathy", "Shame", "Adoration", "Regret", "Jealousy", "Curiosity", "Wistfulness", "Hopelessness", "Desperation", "Loathing", "Indignation"],
       "scenarios": [
         "I went on a thrilling roller coaster ride and felt an incredible rush of excitement.",
-        "I attended a music concert of my favorite band, and the energy in the crowd was ecstatic.",
-        "I received a surprise gift that I had been dreaming of for a long time, and it filled me with ecstasy.",
-        "I witnessed a breathtaking fireworks display, and the colors and explosions left me in a state of pure ecstasy."
+        "I attended a music concert of my favorite band, and there was so much happy energy in the crowd.",
+        "I received a surprise gift that I had been dreaming of for a long time.",
+        "I witnessed a breathtaking fireworks display, and the colors and explosions weree stunning."
       ]
     },
     {
@@ -548,8 +548,8 @@
       "scenarios": [
         "I couldn't decide which flavor of ice cream to choose because they all sounded equally good.",
         "I had mixed feelings about a decision and couldn't make up my mind.",
-        "I felt torn between two equally important choices, and it left me in a state of ambivalence.",
-        "I had conflicting emotions about a situation, not knowing whether to be happy or sad, and it made me feel ambivalent."
+        "I felt torn between two equally important choices.",
+        "I had conflicting emotions about a situation, not knowing whether to be happy or sad."
       ]
     }
   ]
