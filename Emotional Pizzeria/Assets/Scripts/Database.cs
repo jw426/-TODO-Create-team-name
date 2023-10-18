@@ -13,8 +13,8 @@ using Mono.Data.Sqlite;
 public class Database : MonoBehaviour
 {
 
-    private string dbFilePath = "data/ega.db";
-    private string dbName = "URI=file:data/ega.db";
+    private string dbFilePath = "data/wrong/ega.db";
+    private string dbName = "URI=file:data/wrong/ega.db";
     private int curNumHearts;
     public Text curNumHeartsText;
     public GameObject databaseCheck;    

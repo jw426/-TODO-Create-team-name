@@ -620,7 +620,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dff029ca039354d7ab9dfa54adf8100d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCustomers: 5
+  maxCustomers: 3
   endLevel: {fileID: 1264006595}
 --- !u!1 &319393900
 GameObject:
@@ -1736,6 +1736,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curNumHeartsText: {fileID: 0}
+  databaseCheck: {fileID: 0}
+  requiresPopup: 0
 --- !u!1 &588247070
 GameObject:
   m_ObjectHideFlags: 0
