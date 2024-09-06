@@ -5,7 +5,7 @@
 
 - [About](#about)
   * [Contributors](#the-team)
-  * [The game: Emotional Pizzeria🍕](#the-game:-emotional-pizzeria)
+  * [The game: Emotional Pizzeria🍕](#the-game)
 - [Deployment Procedure](#deployment-procedure)
   * [iPhone](#deployment-to-iphone)
   * [Windows](#deployment-to-a-windows-desktop)
@@ -26,8 +26,8 @@ Here's on how to reach our team members!
 - Bernhard Andersson 1168897 bandersson@student.unimelb.edu.au
 - Rimon Ismail 1269285 rcismail@student.unimelb.edu.au
 
-### The Game: Emotional Pizzeria
-🍕
+### The Game
+#### Emotional Pizzeria 🍕
 For our IT Project, we created a game via Unity that aims to increase the 'emotional granularity' of autistic individuals. 
 
 <p align="center">
